@@ -1,4 +1,6 @@
+scratch/
 *~
+*.pdf
 *.aux
 *.glo
 *.idx
