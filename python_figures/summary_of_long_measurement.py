@@ -64,12 +64,6 @@ axis.set_xlabel('Time/minutes', fontsize=20)
 
 
 
-
-
-
-
-
-
 #plt.tight_layout()
 plt.show()
 #plt.savefig('../svg_figures/oscillations_gas_dependence.svg')

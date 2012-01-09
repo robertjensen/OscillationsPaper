@@ -59,8 +59,8 @@ for i in range(0,steps-1):
     axis_array[i].tick_params(direction='in', length=6, width=2, colors='k',labelsize=14,axis='both',pad=5)
     axis2_array[i].tick_params(direction='in', length=6, width=2, colors='k',labelsize=14,axis='y',pad=5)
     
-axis_array[2].set_ylabel('SEM Current / nA', fontsize=20)
-axis2_array[2].set_ylabel('CO/O2 Ratio', fontsize=20)
+axis_array[4].set_ylabel('SEM Current / nA', fontsize=20)
+axis2_array[4].set_ylabel('CO/O2 Ratio', fontsize=20)
 axis_array[4].set_xlabel('Time/h', fontsize=20)
 
 
