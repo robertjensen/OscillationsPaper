@@ -1,6 +1,6 @@
 import matplotlib
 #matplotlib.use('svg')
-#matplotlib.use('Agg')
+matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 import numpy as np
 import MySQLdb
@@ -46,5 +46,5 @@ axis2.set_ylabel('Temperature', fontsize=20)
 axis.set_xlabel('Time/minutes', fontsize=20)
 
 #plt.tight_layout()
-plt.show()
-#plt.savefig('../svg_figures/oscillations_gas_dependence.svg')
+#plt.show()
+plt.savefig('../single_full_oscillation.png')

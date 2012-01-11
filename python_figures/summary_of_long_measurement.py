@@ -4,7 +4,7 @@
 
 import matplotlib
 #matplotlib.use('svg')
-#matplotlib.use('Agg')
+matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 import numpy as np
 import MySQLdb
@@ -46,6 +46,8 @@ periods.append(0)
 for i in range(1,len(oscillations)):
     periods.append(oscillations[i]-oscillations[i-1])
 
+#print len(periods)
+
 fig = plt.figure()
 
 axis = fig.add_subplot(1,1,1)
@@ -65,5 +67,5 @@ axis.set_xlabel('Time/minutes', fontsize=20)
 
 
 #plt.tight_layout()
-plt.show()
-#plt.savefig('../svg_figures/oscillations_gas_dependence.svg')
+#plt.show()
+plt.savefig('../summary_of_long_measurement.png')

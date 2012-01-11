@@ -70,7 +70,7 @@
 \noindent\LARGE{\textbf{Oscillations in CO-oxidation Catalysts at Atmospheric Pressures$^\dag$}}
 \vspace{0.6cm}
 
-\noindent\large{\textbf{Robert Jensen$^{\ast}$\textit{$^{a}$}, Thomas Andersen\textit{$^{b\ddag}$}, Anders Nierhoff\textit{$^{b\ddag}$}, Søren Dahl\textit{$^{b\ddag}$}, Ole Hansen\textit{$^{b\ddag}$} and Ib Chorkendorff\textit{$^{a}$}}}\vspace{0.5cm}
+\noindent\large{\textbf{Robert Jensen\textit{$^{b}$}, Thomas Andersen\textit{$^{b}$}, Anders Nierhoff\textit{$^{b}$}, Søren Dahl\textit{$^{b}$}, Ole Hansen\textit{$^{b}$} and Ib Chorkendorff\textit{$^{a}$}}}\vspace{0.5cm}
 %Please note that \ast indicates the corresponding author(s) but no footnote text is required. 
 
 
@@ -86,8 +86,25 @@ First published on the web Xth XXXXXXXXXX 200X}}}
  \end{@twocolumnfalse}
   ]
 
+
+%\section{This is the section heading style}
 \section{Introduction}
+
+%Footnotes
+\footnotetext{\dag~Electronic Supplementary Information (ESI) available: [details of any supplementary information available should be included here]. See DOI: 10.1039/b000000x/}
+
+%Please use \dag to cite the ESI in the main text of the article.
+%If you article does not have ESI please remove the the \dag symbol from the title and the above footnotetext.
+
+\footnotetext{\textit{$^{a}$~DTU Physics, Fysikvej 312, 2800 Lyngby, Denmark. Fax: XX XXXX XXXX; Tel: XX XXXX XXXX; E-mail: ibchork@fysik.dtu.dk}}
+\footnotetext{\textit{$^{b}$~DTU Physics, Fysikvej 312, 2800 Lyngby, Denmark}}
+
+%additional addresses can be cited as above using the lower-case letters, c, d, e... If all authors are from the same address, no letter is required
+
+%\footnotetext{\ddag~Additional footnotes to the title and authors can be included \emph{e.g.}\ `Present address:' or `These authors contributed equally to this work' as above using the symbols: \ddag, \textsection, and \P. Please place the appropriate symbol next to the author's name and include a \texttt{\textbackslash footnotetext} entry in the the correct place in the list.}
+
 Oxidation of CO is a classic model system for testing catalytic properties of various materials. It was shown already in 1985 (REF) that this reaction will show oscilaltory behaviour under UHV conditions due to surface reconstructions having large influence on the catalytic activity of the surface. However, this is a phenomenon that is only observed under UHV-condition, under higher pressures these kinds of reconstructions will happen. In this paper we show sustained catalytic oscilations on Platinum nano particles that due to their sometimes extremely long time-scales cannot be a surface phenomenon, but must involve a bulk oxidation of the nanoparticle. 
+Similar phenomeon of oscillations of CO oxidation Pt has been seen earlier on thin-films \cite{Lund2000}, single crystals \cite{Hendriksen2005} and in macroscopic flow-reactors \cite{Singh2010}, but to our knowledge never before on nano particles.
 
 \section{Experimental Methods}
 The measurents are done in a silicon-fabricated microreactor, developed here at CINF \cite{Henriksen2009}. The reactor consists of a two inlets, a long mixing zone for the incoming gases and a reactor of total volume of $240\,$nL. The reactor is able to operate at a pressure range og 0-2.5\,bar. The gases is supplied through ordinary flow controllers capable of controlling flow in the range of a few mL/min. The flow is reduced to a value capable of being fed into a mass-spectrometer by passing most of the flow through an outlet connected to a pressure controller. A small part of the flow is led into the reactor chamber and via a $5.4\,\mu$m wide capillary further into UHV chamber equiped with a quadropole mass spectrometer. The design ensures that all gas exposed to the catalyst under investigation is also measured in the mass spectrometer ensures a very high sensitivity of the device. When an evacuated microreactor is mounted, the base pressure of the UHV chambe is $\sim5\times10^{-9}\,$mbar and when operating at $1\,$bar in the reactor the pressure is $\sim5\times10^{-7}\,$mbar.
@@ -98,35 +115,51 @@ The reactor is heated by a Pt heating element evaporated on the backside that at
 The samples was made by depositing a very small amount of size-selcted clusters from a quadropole cluster source (REF!) onto the microreactores. Typical sizes are in the order of 3-9\,nm and the coverage is kept at approximately 0.1\% geometric coverage, found by measuring the current from the charged clusters landing on the reactor. After deposition the reactor is anonicly bonded to a pyrex lid while keeping the reactor area cold by mounting the reactor on a cooling block and heating the rest of the sample to $\sim350\,^\circ$C \cite{Vesborg2010}
 
 \section{Results}
-The experiments was carried out 
+The experiments was carried out ....
+
+The period of the oscillations ranges from a few seconds (the time-constant of the reactor) up to more than an hour. A typical slow is oscillation is seen in figure~\ref{fgr:full_oscillation} where we see the typical pattern going from almost no activity slowly up towards $\sim$50\% conversion at which point the sample light off to full conversion almost instantiously where after a short peiod of time the sample again de-activates.
+% an example of a two-column figure, remember that the graphics should be included where it is first referenced
+\begin{figure*}
+  \centering
+  \includegraphics[height=7cm]{single_full_oscillation.png}
+  \caption{A full oscillation first showing a steep ignition of the sample followed by an almost imidiately de-activation of the sample. For the next 65\,minutes the sample slowly recovers activity until it again lights off completely.}
+  \label{fgr:full_oscillation}
+\end{figure*}
+
+If a sample is leaved for long periods of time, it keep performing sustained oscillations, but with longer and longer periods. In the beginning the period is very stable and sligtly increasing but after a few days, the periods becomes more and more noisy although still maintaining the trend of longer and longer periods. Figure~\ref{fgr:full_oscillation} shows a summary of the periods of a sample oscillating for 4 days. 
+% an example of a single-column figure, remember that the graphics should be included where it is first referenced
+\begin{figure}[h]
+\centering
+  \includegraphics[height=7cm]{summary_of_long_measurement.png}
+  \caption{Summary of a sample oscillating under constant temperature, pressure and reactant composition. The sample a total for 439 oscillations in 4 days.}
+  \label{fgr:long_measurement}
+\end{figure}
+
+Extracts of the mass-spectrometry from the very beginning, the middle and towards the end of the experiments is shown in figure~\ref{fgr:extracts}, it is evident that the oscillations are getting more and more irregular as times goes on, towards the end, it is also clearly visible how the smaller oscillations are taking place at a much higher frequency than the full on-off cycles, which is most likely the explanation for the increasing scatter in the period summary.
+% an example of a two-column figure, remember that the graphics should be included where it is first referenced
+\begin{figure*}
+  \centering
+  \includegraphics[height=7cm]{extracts_from_very_long_oscillation.png}
+  \caption{Extracts from the 4 day long experiment.}
+  \label{fgr:extracts}
+\end{figure*}
+
+
+
 Several different samples deposited at various diffent sizes and amounts all show the oscillating bahaviour. Repeatability is high regarding running long experiments on a single sample, but very low from sample to sample.
 
 \section{Discussion}
 Due to long timescales involved which are much larger than any typically orcurring timescales for such a small system, there can be little doubt that this phenomenon involves some kind of reaction involving the bulk of the nano particles.
 
-\section{This is the section heading style}
-%Footnotes
-\footnotetext{\dag~Electronic Supplementary Information (ESI) available: [details of any supplementary information available should be included here]. See DOI: 10.1039/b000000x/}
-
-%Please use \dag to cite the ESI in the main text of the article.
-%If you article does not have ESI please remove the the \dag symbol from the title and the above footnotetext.
-
-\footnotetext{\textit{$^{a}$~Address, Address, Town, Country. Fax: XX XXXX XXXX; Tel: XX XXXX XXXX; E-mail: xxxx@aaa.bbb.ccc}}
-\footnotetext{\textit{$^{b}$~Address, Address, Town, Country. }}
-
-%additional addresses can be cited as above using the lower-case letters, c, d, e... If all authors are from the same address, no letter is required
-
-\footnotetext{\ddag~Additional footnotes to the title and authors can be included \emph{e.g.}\ `Present address:' or `These authors contributed equally to this work' as above using the symbols: \ddag, \textsection, and \P. Please place the appropriate symbol next to the author's name and include a \texttt{\textbackslash footnotetext} entry in the the correct place in the list.}
 
 
-The main text of the article\cite{Mena2000} should appear here.
 
-\subsection{This is the subsection heading style}
-Section headings can be typeset with and without numbers.\cite{Abernethy2003}
+%\subsection{This is the subsection heading style}
+%Section headings can be typeset with and without numbers.\cite{Gong2004} \cite{Hendriksen2010}
 
-\subsubsection{This is the subsubsection style.~~} These headings should end in a full point.  
+%\subsubsection{This is the subsubsection style.~~} These headings should end in a full point.  
 
-\paragraph{This is the next level heading.~~} For this level please use \texttt{\textbackslash paragraph}. These headings should also end in a full point.
+%\paragraph{This is the next level heading.~~} For this level please use \texttt{\textbackslash paragraph}. These headings should also end in a full point.
 
 \section{Equations}
 
@@ -140,25 +173,12 @@ Equations can be typeset inline \textit{e.g.} $ y = mx + c$ or displayed with an
 
 \section{Graphics and tables}
 \subsection{Graphics}
-Graphics should be inserted on the page where they are first mentioned (unless they are equations, which appear in the flow of the text).\cite{Cotton1999}
+Graphics should be inserted on the page where they are first mentioned (unless they are equations, which appear in the flow of the text).
 
-\begin{figure}[h]
-\centering
-  \includegraphics[height=3cm]{example}
-  \caption{An example figure caption}
-  \label{fgr:example}
-\end{figure}
 
-% an example of a two-column figure
-%\begin{figure*}
-  %\centering
-  %\includegraphics[height=3cm]{example.jpg}
-  %\caption{An example figure caption, an image from the \textit{Physical Chemistry Chemical Physics} cover gallery.}
-  %\label{fgr:example}
-%\end{figure*}
 
 \subsection{Tables}
-Tables typeset in RSC house style do not include vertical lines. Table footnote symbols are lower-case italic letters and are typeset at the bottom of the table. Table captions do not end in a full point.\cite{Arduengo1992,Eisenstein2005}
+Tables typeset in RSC house style do not include vertical lines. Table footnote symbols are lower-case italic letters and are typeset at the bottom of the table. Table captions do not end in a full point.
 
 
 \begin{table}[h]
