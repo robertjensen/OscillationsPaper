@@ -1,6 +1,6 @@
 import matplotlib
 #matplotlib.use('svg')
-matplotlib.use('Agg')
+#matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 import numpy as np
 import MySQLdb
@@ -54,5 +54,5 @@ for i in range(0,3):
     axis_array[i].set_xlabel('Time/minutes', fontsize=20)
 
 #plt.tight_layout()
-#plt.show()
-plt.savefig('../extracts_from_very_long_oscillation.png')
+plt.show()
+#plt.savefig('../extracts_from_very_long_oscillation.png')
