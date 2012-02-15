@@ -1,8 +1,11 @@
 import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
+import matplotlib.gridspec as gridspec
 import numpy as np
 import MySQLdb
+from matplotlib.patches import Rectangle
+
 
 try:
     db = MySQLdb.connect(host="servcinf", user="cinf_reader",passwd = "cinf_reader", db = "cinfdata")
@@ -27,16 +30,27 @@ data['TEMPERATURE'] = np.array(cursor.fetchall())
 
 
 fig = plt.figure()
-fig.subplots_adjust(bottom=0.2) # Make room for x-label
+fig.subplots_adjust(bottom=0.1) # Make room for x-label
 fig.subplots_adjust(right=0.85) # Make room for second y-label
 
-ratio = 0.61803398           # Golden mean
+#ratio = 0.61803398           # Golden mean
+ratio = 0.9
 fig_width = 9
 fig_width = fig_width /2.54        # width in cm converted to inches
 fig_height = fig_width*ratio
 fig.set_size_inches(fig_width,fig_height)
 
-axis = fig.add_subplot(1,1,1)
+
+gs = gridspec.GridSpec(2, 2)
+
+gs.update(wspace=0.1,hspace=0.4)
+
+axis = plt.subplot(gs[0, :])
+#axis = fig.add_subplot(2,2,1)
+
+
+p = axis.axvspan(460, 490, facecolor='red', alpha=0.25)
+p = axis.axvspan(710, 740, facecolor='yellow', alpha=0.35)
 axis.plot(data['M28'][:,0], data['M28'][:,1]*1e9, 'r-')
 axis.plot(data['M44'][:,0], data['M44'][:,1]*1e9, 'g-')
 axis.set_ylim(0,8)
@@ -46,6 +60,8 @@ axis2.set_ylim(0,300)
 #axis2.set_yticks((170,180,190,200))
 axis.set_xlim(100,800)
 axis.grid(True)    
+
+
 
 arrow = dict(facecolor='black', shrink=0.085,width=1)
 axis.annotate('M28', xy=(260, 2.6),  xycoords='data', xytext=(185, 3.5), textcoords='data', arrowprops=arrow, horizontalalignment='right', verticalalignment='center',fontsize=9,)
@@ -58,6 +74,49 @@ axis2.tick_params(direction='in', length=6, width=1, colors='k',labelsize=8,axis
 axis.set_ylabel('SEM Current / nA', fontsize=8)
 axis2.set_ylabel('Temperature / $^\circ$C', fontsize=8)
 axis.set_xlabel('Time/minutes', fontsize=8)
+
+
+
+axis = plt.subplot(gs[1,0])
+p = axis.axvspan(460, 490, facecolor='red', alpha=0.25)
+axis.plot(data['M28'][:,0], data['M28'][:,1]*1e9, 'r-')
+axis.plot(data['M44'][:,0], data['M44'][:,1]*1e9, 'g-')
+axis.set_ylim(0,6)
+axis2 = axis.twinx()
+axis2.plot(data['TEMPERATURE'][:,0], data['TEMPERATURE'][:,1], 'b-')
+axis2.set_ylim(0,300)
+#axis2.set_yticks((170,180,190,200))
+axis.set_xlim(460,490)
+axis.set_ylabel('SEM Current / nA', fontsize=8)
+axis2.set_ylabel('', fontsize=8)
+axis.set_xticks((465,475,485))
+axis2.set_yticks(())
+axis.set_xlabel('Time/minutes', fontsize=8)
+axis.tick_params(direction='in', length=6, width=1, colors='k',labelsize=8,axis='both',pad=3)
+axis2.tick_params(direction='in', length=6, width=1, colors='k',labelsize=8,axis='both',pad=3)
+
+axis.grid(True)
+
+axis = plt.subplot(gs[1,1])
+#axis = fig.add_subplot(2,2,1)
+p = axis.axvspan(710, 740, facecolor='yellow', alpha=0.35)
+axis.plot(data['M28'][:,0], data['M28'][:,1]*1e9, 'r-')
+axis.plot(data['M44'][:,0], data['M44'][:,1]*1e9, 'g-')
+axis.set_ylim(0,6)
+axis2 = axis.twinx()
+axis2.plot(data['TEMPERATURE'][:,0], data['TEMPERATURE'][:,1], 'b-')
+axis2.set_ylim(0,300)
+axis.set_xticks((715,725,735))
+axis.set_xlim(710,740)
+axis.set_yticks(())
+axis2.set_ylabel('Temperature / $^\circ$C', fontsize=8)
+axis.set_xlabel('Time/minutes', fontsize=8)
+axis.tick_params(direction='in', length=6, width=1, colors='k',labelsize=8,axis='both',pad=3)
+axis2.tick_params(direction='in', length=6, width=1, colors='k',labelsize=8,axis='both',pad=3)
+
+
+
+axis.grid(True)
 
 #plt.tight_layout()
 plt.show()
