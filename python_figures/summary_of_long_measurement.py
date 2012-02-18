@@ -59,20 +59,22 @@ fig.set_size_inches(fig_width,fig_height)
 
 axis = fig.add_subplot(1,1,1)
 axis.plot(oscillations, periods, 'b.')
+axis.plot([750,6000],[1.8,17],'k-')
+axis.plot([750,5000],[5,43],'k-')
 #axis.plot(data['M28'][:,0], data['M28'][:,1], 'r-')
 #axis.plot(data['M44'][:,0], data['M44'][:,1], 'b-')
 #axis.set_ylim(0,7)
 #axis.set_xlim(0,500)
 
-axis.tick_params(direction='in', length=6, width=2, colors='k',labelsize=10,axis='both',pad=3)
+axis.tick_params(direction='in', length=6, width=2, colors='k',labelsize=8,axis='both',pad=3)
 axis.grid(True)    
 
 #axis.set_ylabel('SEM Current / nA', fontsize=20)
-axis.set_ylabel('Oscil. period / minutes', fontsize=10)
-axis.set_xlabel('Time/minutes', fontsize=10)
+axis.set_ylabel('Oscil. period / minutes', fontsize=8)
+axis.set_xlabel('Time/minutes', fontsize=8)
 
 
 
 #plt.tight_layout()
-#plt.show()
+plt.show()
 plt.savefig('../summary_of_long_measurement.png',dpi=300)

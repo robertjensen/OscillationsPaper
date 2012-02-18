@@ -60,7 +60,7 @@ for i in range(0,3):
     
     axis_array[i].tick_params(direction='in', length=6, width=1, colors='k',labelsize=8,axis='both',pad=2)
     axis2_array[i].tick_params(direction='in', length=6, width=1, colors='k',labelsize=8,axis='y',pad=2)
-    axis_array[i].grid(True)    
+    axis_array[i].grid(False)    
 
 axis_array[1].set_ylabel('SEM Current / nA', fontsize=8)
 axis2_array[1].set_ylabel('Temperature', fontsize=8)

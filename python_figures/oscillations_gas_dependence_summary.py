@@ -1,6 +1,6 @@
 import matplotlib
 #matplotlib.use('svg')
-#matplotlib.use('Agg')
+matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 import numpy as np
 import MySQLdb
@@ -71,27 +71,31 @@ periods.append(0)
 for i in range(1,len(oscillations)):
     periods.append(oscillations[i]-oscillations[i-1])
 
+
 fig = plt.figure()
+fig.subplots_adjust(bottom=0.2) # Make room for x-label
+ratio = 0.61803398              # Golden mean
+fig_width = 9
+fig_width = fig_width /2.54     # width in cm converted to inches
+fig_height = fig_width*ratio
+fig.set_size_inches(fig_width,fig_height)
+
 
 print len(oscillations)
 print len(periods)
 
 axis = fig.add_subplot(1,1,1)
-axis.plot(oscillations, periods, 'bo')
+axis.plot(oscillations, periods, 'b.')
 #axis.plot(data['M28'][:,0], data['M28'][:,1], 'r-')
 #axis.plot(data['M44'][:,0], data['M44'][:,1], 'b-')
-#axis.set_ylim(0,7)
-#axis.set_xlim(0,500)
+axis.set_ylim(0,50)
+axis.set_xlim(0,3100)
 
-axis.tick_params(direction='in', length=6, width=2, colors='k',labelsize=14,axis='both',pad=5)
+axis.tick_params(direction='in', length=6, width=2, colors='k',labelsize=8,axis='both',pad=3)
 axis.grid(True)    
 
-#axis.set_ylabel('SEM Current / nA', fontsize=20)
-axis.set_ylabel('Oscillations periods / minutes', fontsize=20)
-axis.set_xlabel('Time/minutes', fontsize=20)
-
-
-
+axis.set_ylabel('Oscillations periods / minutes', fontsize=8)
+axis.set_xlabel('Time/minutes', fontsize=8)
 
 
 
@@ -100,7 +104,7 @@ axis.set_xlabel('Time/minutes', fontsize=20)
 
 #plt.tight_layout()
 plt.show()
-#plt.savefig('../svg_figures/oscillations_gas_dependence.svg')
+plt.savefig('../oscillations_gas_dependence_supplemental.png',dpi=300)
 
 
 
