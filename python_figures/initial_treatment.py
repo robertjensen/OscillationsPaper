@@ -49,8 +49,8 @@ axis = plt.subplot(gs[0, :])
 #axis = fig.add_subplot(2,2,1)
 
 
-p = axis.axvspan(460, 490, facecolor='red', alpha=0.25)
-p = axis.axvspan(710, 740, facecolor='yellow', alpha=0.35)
+p = axis.axvspan(460, 490, facecolor='#b6fa77', alpha=0.25)
+p = axis.axvspan(710, 740, facecolor='#28cfe9', alpha=0.35)
 axis.plot(data['M28'][:,0], data['M28'][:,1]*1e9, 'r-')
 axis.plot(data['M44'][:,0], data['M44'][:,1]*1e9, 'g-')
 axis.set_ylim(0,8)
@@ -80,7 +80,7 @@ axis.set_xlabel('Time/minutes', fontsize=8)
 
 
 axis = plt.subplot(gs[1,0])
-p = axis.axvspan(460, 490, facecolor='red', alpha=0.25)
+p = axis.axvspan(460, 490, facecolor='#b6fa77', alpha=0.25)
 axis.plot(data['M28'][:,0], data['M28'][:,1]*1e9, 'r-')
 axis.plot(data['M44'][:,0], data['M44'][:,1]*1e9, 'g-')
 axis.set_ylim(0,6)
@@ -102,7 +102,7 @@ axis.grid(False)
 
 axis = plt.subplot(gs[1,1])
 #axis = fig.add_subplot(2,2,1)
-p = axis.axvspan(710, 740, facecolor='yellow', alpha=0.35)
+p = axis.axvspan(710, 740, facecolor='#28cfe9', alpha=0.35)
 axis.plot(data['M28'][:,0], data['M28'][:,1]*1e9, 'r-')
 axis.plot(data['M44'][:,0], data['M44'][:,1]*1e9, 'g-')
 axis.set_ylim(0,6)
