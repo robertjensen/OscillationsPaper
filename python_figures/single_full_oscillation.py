@@ -5,6 +5,8 @@ import matplotlib.pyplot as plt
 import numpy as np
 import MySQLdb
 
+matplotlib.rc('text',usetex=True) # Magic fix for the font warnings
+
 try:
     db = MySQLdb.connect(host="servcinf", user="cinf_reader",passwd = "cinf_reader", db = "cinfdata")
 except:
@@ -60,6 +62,33 @@ axis2.tick_params(direction='in', length=6, width=1, colors='k',labelsize=8,axis
 axis.set_ylabel('SEM Current / nA', fontsize=8)
 axis2.set_ylabel('Temperature / $^\circ$C', fontsize=8)
 axis.set_xlabel('Time/minutes', fontsize=8)
+
+
+
+a = plt.axes([.18, .65, .3, .25], axisbg='w',polar=True)
+N = 500
+R = np.random.rand(N)
+Theta = np.random.rand(N)*2*np.pi
+area = 1
+
+colors = np.zeros(N)
+
+for i in range(0,N):
+    if (R[i]>0.7) and (Theta[i] < 1):
+        colors[i] = 1
+    
+#ax = plt.subplot(111, polar=True)
+
+c = plt.scatter(Theta, R, c=colors, s=area, linewidths=0)
+
+c.set_alpha(0.75)
+
+
+#ax.tick_params(direction='in', length=3, width=1, colors='k',labelsize=6,axis='both',pad=3)
+#plt.setp(ax, xticks=[], yticks=[])
+
+plt.setp(a, xticks=[], yticks=[])
+#plt.setp(a, xlim=(700,1500), ylim=(2,8),xticks=[900,1100,1300], yticks=[3,5,7])
 
 #plt.tight_layout()
 plt.show()
