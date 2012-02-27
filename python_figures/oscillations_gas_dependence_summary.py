@@ -104,7 +104,7 @@ axis.set_xlabel('Time/minutes', fontsize=8)
 
 #plt.tight_layout()
 plt.show()
-plt.savefig('../oscillations_gas_dependence_supplemental.png',dpi=300)
+plt.savefig('../oscillations_gas_dependence_summary_supplemental.png',dpi=300)
 
 
 

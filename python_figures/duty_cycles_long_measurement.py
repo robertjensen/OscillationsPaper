@@ -57,11 +57,16 @@ m44_average = []
 m44_average.append(0)
 m28_average = []
 m28_average.append(0)
+eff = []
+eff.append(0)
 for i in range(1,len(oscillations)):
     periods.append(oscillations[i]-oscillations[i-1])
     
-    m44_average.append(average(data['M44'][mass_indexes[i-i]:mass_indexes[i],1]))
-    m28_average.append(average(data['M28'][mass_indexes[i-i]:mass_indexes[i],1]))
+    m44_av = average(data['M44'][mass_indexes[i-i]:mass_indexes[i],1])
+    m44_average.append(m44_av)
+    m28_av = average(data['M28'][mass_indexes[i-i]:mass_indexes[i],1])
+    m28_average.append(m28_av)
+    eff.append(m44_av/m28_av)
 
 #print len(periods)
 
@@ -74,8 +79,9 @@ fig_height = fig_width*ratio
 fig.set_size_inches(fig_width,fig_height)
 
 axis = fig.add_subplot(1,1,1)
-axis.plot(oscillations, m28_average, 'r-')
-axis.plot(oscillations, m44_average, 'b-')
+axis.plot(oscillations, m28_average, 'r.')
+axis.plot(oscillations, m44_average, 'b.')
+axis.plot(oscillations, eff, 'k.')
 #axis.plot(data['M28'][:,0], data['M28'][:,1], 'r-')
 #axis.plot(data['M44'][:,0], data['M44'][:,1], 'b-')
 #axis.set_ylim(0,7)
@@ -91,5 +97,5 @@ axis.set_xlabel('Time/minutes', fontsize=8)
 
 
 #plt.tight_layout()
-plt.show()
+#plt.show()
 plt.savefig('../duty_cycles_long_measurement_supplemental.png',dpi=300)
