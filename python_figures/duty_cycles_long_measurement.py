@@ -79,19 +79,19 @@ fig_height = fig_width*ratio
 fig.set_size_inches(fig_width,fig_height)
 
 axis = fig.add_subplot(1,1,1)
-axis.plot(oscillations, m28_average, 'r.')
-axis.plot(oscillations, m44_average, 'b.')
-axis.plot(oscillations, eff, 'k.')
+axis.plot(oscillations, m28_average, 'r.',markersize=0.5)
+axis.plot(oscillations, m44_average, 'b.',markersize=0.5)
+axis.plot(oscillations, eff, 'k.',markersize=0.5)
 #axis.plot(data['M28'][:,0], data['M28'][:,1], 'r-')
 #axis.plot(data['M44'][:,0], data['M44'][:,1], 'b-')
-#axis.set_ylim(0,7)
-#axis.set_xlim(0,500)
+axis.set_ylim(1,4)
+axis.set_xlim(700,6000)
 
 axis.tick_params(direction='in', length=6, width=2, colors='k',labelsize=8,axis='both',pad=5)
-axis.grid(True)    
+axis.grid(False)    
 
 #axis.set_ylabel('SEM Current / nA', fontsize=20)
-axis.set_ylabel('Integrated charge (a.u.) / oscil.', fontsize=8)
+axis.set_ylabel('Integrated charge (a.u.)', fontsize=8)
 axis.set_xlabel('Time/minutes', fontsize=8)
 
 

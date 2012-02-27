@@ -46,8 +46,8 @@ fig = plt.figure()
 fig.subplots_adjust(bottom=0.05) # Make room for x-label
 fig.subplots_adjust(right=0.85) # Make room for right y-label
 #ratio = 0.61803398              # Golden mean
-ratio = 2
-fig_width = 13
+ratio = 1.4
+fig_width = 14
 fig_width = fig_width /2.54     # width in cm converted to inches
 fig_height = fig_width*ratio
 fig.set_size_inches(fig_width,fig_height)
@@ -57,7 +57,7 @@ axis_array = []
 axis2_array = []
 
 for i in range(0,steps-1):
-    axis_array.append(fig.add_subplot((steps-1)/2,2,i+1))
+    axis_array.append(fig.add_subplot(6,3,i+1))
     axis_array[i].plot(data['M28'][:,0], data['M28'][:,1]*1e9, 'r-')
     axis_array[i].plot(data['M44'][:,0], data['M44'][:,1]*1e9, 'b-')
     #axis_array[i].set_ylim(0,0.1*(i+1)*1.85)
@@ -66,11 +66,21 @@ for i in range(0,steps-1):
     axis2_array.append(axis_array[i].twinx())
     axis2_array[i].plot(data['CO_FLOW'][:,0], data['CO_FLOW'][:,1]/(4+data['CO_FLOW'][:,1]), 'k-')
     axis2_array[i].set_ylim(0.01,0.25)
-    
-    if i%2 == 1:
+
+    if i%3 == 1:
+        axis2_array[i].set_yticks(())
+
+    if i%3 == 2:
+        axis2_array[i].set_ylabel('CO/O$_2$-ratio', fontsize=8)    
+
+    if i == 16:
+        axis_array[i].set_xlabel('Time / Hours', fontsize=8)    
+
+    if i%3 > 0:
         axis_array[i].set_yticks(())    
     else:
-        axis2_array[i].set_yticks(())    
+        axis2_array[i].set_yticks(())
+        axis_array[i].set_ylabel('SEM Current / nA', fontsize=8)    
     
     st = math.ceil(flow_sections[i])
     axis_array[i].set_xticks((st,st+1,st+2,st+3))
