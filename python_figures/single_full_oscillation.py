@@ -52,8 +52,8 @@ axis.grid(False)
 
 #arrow = dict(facecolor='black', shrink=0.085,width=1)
 arrow = dict(facecolor='black',arrowstyle='->')
-axis.annotate('M28', xy=(1040, 0.82),  xycoords='data', xytext=(1055, 0.85), textcoords='data', arrowprops=arrow, horizontalalignment='right', verticalalignment='center',fontsize=9,)
-axis.annotate('M44', xy=(1040, 0.5),  xycoords='data', xytext=(1050, 0.65), textcoords='data', arrowprops=arrow, horizontalalignment='right', verticalalignment='center',fontsize=9,)
+axis.annotate('CO', xy=(1040, 0.82),  xycoords='data', xytext=(1055, 0.85), textcoords='data', arrowprops=arrow, horizontalalignment='right', verticalalignment='center',fontsize=9,)
+axis.annotate('CO$_2$', xy=(1040, 0.5),  xycoords='data', xytext=(1050, 0.65), textcoords='data', arrowprops=arrow, horizontalalignment='right', verticalalignment='center',fontsize=9,)
 axis.annotate('Temp.', xy=(1070, 1.08),  xycoords='data', xytext=(1095, 0.93), textcoords='data', arrowprops=arrow, horizontalalignment='right', verticalalignment='center',fontsize=9,)
 
 axis.tick_params(direction='in', length=6, width=1, colors='k',labelsize=8,axis='both',pad=3)

@@ -1,4 +1,3 @@
-
 #This will be a simple implementation of a program that summaries the oscillation period as a function of oscillation number
 #We will also need a simple program that summarises duty cycle as a function of oscillation
 
@@ -9,6 +8,8 @@ import matplotlib.pyplot as plt
 import numpy as np
 import MySQLdb
 from scipy import optimize
+
+matplotlib.rc('text',usetex=True) # Magic fix for the font warnings
 
 try:
     db = MySQLdb.connect(host="servcinf", user="cinf_reader",passwd = "cinf_reader", db = "cinfdata")

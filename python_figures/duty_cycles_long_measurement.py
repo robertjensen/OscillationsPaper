@@ -9,6 +9,8 @@ import matplotlib.pyplot as plt
 import numpy as np
 import MySQLdb
 
+matplotlib.rc('text',usetex=True) # Magic fix for the font warnings
+
 def average(values):
     """Computes the arithmetic mean of a list of numbers.
 
@@ -80,10 +82,17 @@ fig.set_size_inches(fig_width,fig_height)
 
 axis = fig.add_subplot(1,1,1)
 axis.plot(oscillations, m28_average, 'r.',markersize=0.5)
-axis.plot(oscillations, m44_average, 'b.',markersize=0.5)
+axis.plot(oscillations, m44_average, 'g.',markersize=0.5)
 axis.plot(oscillations, eff, 'k.',markersize=0.5)
 #axis.plot(data['M28'][:,0], data['M28'][:,1], 'r-')
 #axis.plot(data['M44'][:,0], data['M44'][:,1], 'b-')
+
+arrow = dict(facecolor='black',arrowstyle='->')
+axis.annotate('CO$_2$', xy=(2500, 3.4),  xycoords='data', xytext=(2100, 3.1), textcoords='data', arrowprops=arrow, horizontalalignment='right', verticalalignment='center',fontsize=8,)
+axis.annotate('CO', xy=(2500, 2.1),  xycoords='data', xytext=(2100, 2.4), textcoords='data', arrowprops=arrow, horizontalalignment='right', verticalalignment='center',fontsize=8,)
+axis.annotate('CO$_2$/CO', xy=(2500, 1.6),  xycoords='data', xytext=(2100, 1.3), textcoords='data', arrowprops=arrow, horizontalalignment='right', verticalalignment='center',fontsize=8,)
+
+
 axis.set_ylim(1,4)
 axis.set_xlim(700,6000)
 
