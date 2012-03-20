@@ -1,109 +1,92 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%This is the article LaTeX template for RSC journals
-%Copyright The Royal Society of Chemistry 2010
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% This is a (brief) model paper using the achemso class
+%% The document class accepts keyval options, which should include
+%% the target journal and optionally the macuscript tye
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[journal=jacsat,manuscript=article]{achemso}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Place any additional packages needed here.  Only include packages
+%% which are essential, to avoid problems later.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[version=3]{mhchem} % Formula subscripts using \ce{}
+\usepackage{graphicx}
 
-\documentclass[8.5pt,twoside,twocolumn]{article}
-\oddsidemargin -1.2cm
-\evensidemargin -1.2cm
-\textwidth 18cm
-\headheight 1.0in
-\topmargin -3.5cm
-\textheight 22cm
-\usepackage[super,sort&compress,comma]{natbib} 
-\usepackage[version=3]{mhchem}
-\usepackage[utf8]{inputenc}
-\usepackage{times,mathptmx}
- \usepackage{times}
-% feel free not to use mathptmx if it causes difficulties
-\usepackage{sectsty}
-\usepackage{balance} 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% If issues arise when submitting your manuscript, you may want to
+%% un-comment the next line.  This provides information on the
+%% version of every file you have used.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%\listfiles
 
-\usepackage{graphicx} %eps figures can be used instead
-\usepackage{lastpage}
-\usepackage[format=plain,justification=raggedright,singlelinecheck=false,font=small,labelfont=bf,labelsep=space]{caption} 
-\usepackage{fancyhdr}
-\pagestyle{fancy}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Place any additional macros here.  Please use \newcommand* where
+%% possible, and avoid layout changing macros (which are not used
+%% when typesetting).
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand*{\mycommand}[1]{\texttt{\emph{#1}}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Meta-data block
+%% ---------------
+%% Each author should be given as a separate \author command.
+%%
+%% Corresponding authors should have an e-mail given after the author
+%% name as an \email command.
+%%
+%% The affiliation of authors is given after the authors; each
+%% \affiliation command applies to all preceding authors not already
+%% assigned an affiliation.
+%%
+%% The affiliation takes an option argument for the short name.  This
+%% will typically be something like "University of Somewhere".
+%%
+%% The \altaffiliation macro should be used for new address, etc.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\author{Robert Jensen}
+\author{Thomas Andersen}
+\author{Anders Nierhoff}
+\altaffiliation{CINF, Department of Physics, Technical University of Denmark, Fysikvej 312, 2800 Lyngby, Denmark.}
+\author{Thomas Pedersen}
+\author{Ole Hansen}
+\affiliation{CINF, Department of Micro- and Nanotechnology, Technical University of Denmark, Ørsteds Plads, B 345B, 2800 Lyngby, Denmark. Fax: XX XXXX XXXX; Tel: XX XXXX XXXX; E-mail: ibchork@fysik.dtu.dk}
+\author{Søren Dahl}
+\author{Ib Chorkendorff}
+\email{ibchork@fysik.dtu.dk}
+\altaffiliation{CINF, Department of Physics, Technical University of Denmark, Fysikvej 312, 2800 Lyngby, Denmark.}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% The document title should be given as usual
+%% A short title can be given as a *suggestion* for running headers.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\title[Oxidation oscillations at atmospheric pressure]
+{Self-sustained carbon monoxide oxidation oscillations on size-selected platinum nanoparticles at atmospheric pressure}
 
 \begin{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% The manuscript does not need to include \maketitle, which is
+%% executed automatically.  The document should begin with an
+%% abstract, if appropriate.  If one is given and should not be, the
+%% contents will be gobbled.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{abstract}
+  High-quality mass spectrometry data of the oscillatory behavior
+  of CO oxidation on SiO$_2$ supported Pt-nanoparticles at atmospheric
+  pressure has been acquired as a function of pressure, coverage, gas
+  composition and nanoparticle size. The oscillations are self-sustained
+  for several days at constant temperature, pressure and CO/O$_2$ ratio.
+  The frequency of the oscillations is very well defined and increases
+  over time. The oscillation frequency is furthermore strongly temperature
+  dependent with increasing temperature resulting in increasing frequency.
+  A plausible mechanism for the oscillations is proposed based on a
+  oxidation/reduction cycle of the nanoparticles which change the rate of
+  CO oxidation on the particles.
+\end{abstract}
 
-\thispagestyle{plain}
-\fancypagestyle{plain}{
-\fancyhead[L]{\includegraphics[height=8pt]{headers/LH}}
-\fancyhead[C]{\hspace{-1cm}\includegraphics[height=20pt]{headers/CH}}
-\fancyhead[R]{\includegraphics[height=10pt]{headers/RH}\vspace{-0.2cm}}
-\renewcommand{\headrulewidth}{1pt}}
-\renewcommand{\thefootnote}{\fnsymbol{footnote}}
-\renewcommand\footnoterule{\vspace*{1pt}% 
-\hrule width 3.4in height 0.4pt \vspace*{5pt}} 
-\setcounter{secnumdepth}{5}
-
-
-
-\makeatletter 
-\def\subsubsection{\@startsection{subsubsection}{3}{10pt}{-1.25ex plus -1ex minus -.1ex}{0ex plus 0ex}{\normalsize\bf}} 
-\def\paragraph{\@startsection{paragraph}{4}{10pt}{-1.25ex plus -1ex minus -.1ex}{0ex plus 0ex}{\normalsize\textit}} 
-\renewcommand\@biblabel[1]{#1}            
-\renewcommand\@makefntext[1]% 
-{\noindent\makebox[0pt][r]{\@thefnmark\,}#1}
-\makeatother 
-\renewcommand{\figurename}{\small{Fig.}~}
-\sectionfont{\large}
-\subsectionfont{\normalsize} 
-
-\fancyfoot{}
-\fancyfoot[LO,RE]{\vspace{-7pt}\includegraphics[height=9pt]{headers/LF}}
-\fancyfoot[CO]{\vspace{-7.2pt}\hspace{12.2cm}\includegraphics{headers/RF}}
-\fancyfoot[CE]{\vspace{-7.5pt}\hspace{-13.5cm}\includegraphics{headers/RF}}
-\fancyfoot[RO]{\footnotesize{\sffamily{1--\pageref{LastPage} ~\textbar  \hspace{2pt}\thepage}}}
-\fancyfoot[LE]{\footnotesize{\sffamily{\thepage~\textbar\hspace{3.45cm} 1--\pageref{LastPage}}}}
-\fancyhead{}
-\renewcommand{\headrulewidth}{1pt} 
-\renewcommand{\footrulewidth}{1pt}
-\setlength{\arrayrulewidth}{1pt}
-\setlength{\columnsep}{6.5mm}
-\setlength\bibsep{1pt}
-
-\twocolumn[
-  \begin{@twocolumnfalse}
-\noindent\LARGE{\textbf{Self-sustained carbon monoxide oxidation oscillations on size-selected platinum nanoparticles at atmospheric pressure$^\dag$}}
-\vspace{0.6cm}
-
-\noindent\large{\textbf{Robert Jensen,\textit{$^{a}$} Thomas Andersen,\textit{$^{a}$} Anders Nierhoff,\textit{$^{a}$} Thomas Pedersen,\textit{$^{b}$} Ole Hansen,\textit{$^{b}$} Søren Dahl,\textit{$^{a}$} and Ib Chorkendorff\textit{$^{a}$}}}\vspace{0.5cm}
-%Please note that \ast indicates the corresponding author(s) but no footnote text is required. 
-
-
-\noindent\textit{\small{\textbf{Received Xth XXXXXXXXXX 20XX, Accepted Xth XXXXXXXXX 20XX\newline
-First published on the web Xth XXXXXXXXXX 200X}}}
-
-\noindent \textbf{\small{DOI: 10.1039/b000000x}}
-\vspace{0.6cm}
-%Please do not change this text.
-
-\noindent \normalsize{High-quality mass spectrometry data of the oscillatory behavior of CO oxidation on SiO$_2$ supported Pt-nanoparticles at atmospheric pressure has been acquired as a function of pressure, coverage, gas composition and nanoparticle size. The oscillations are self-sustained for several days at constant temperature, pressure and CO/O$_2$ ratio. The frequency of the oscillations is very well defined and increases over time. The oscillation frequency is furthermore strongly temperature dependent with increasing temperature resulting in increasing frequency. A plausible mechanism for the oscillations is proposed based on a oxidation/reduction cycle of the nanoparticles which change the rate of CO oxidation on the particles.}  %on an earlier model on Pd single crystals [Hendriksen \textit{et al., Nature Chemistry}, 2010, \textbf{9}, 730]}
-\vspace{0.5cm}
- \end{@twocolumnfalse}
-  ]
-
-
-%\section{This is the section heading style}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Start the main part of the manuscript here.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Introduction}
-
-%Footnotes
-\footnotetext{\dag~Electronic Supplementary Information (ESI) available: [details of any supplementary information available should be included here]. See DOI: 10.1039/b000000x/}
-
-%Please use \dag to cite the ESI in the main text of the article.
-%If you article does not have ESI please remove the the \dag symbol from the title and the above footnotetext.
-
-\footnotetext{\textit{$^{a}$~CINF, Department of Physics, Technical University of Denmark, Fysikvej 312, 2800 Lyngby, Denmark. Fax: XX XXXX XXXX; Tel: XX XXXX XXXX; E-mail: ibchork@fysik.dtu.dk}}
-\footnotetext{\textit{$^{b}$~CINF, Department of Micro- and Nanotechnology, Technical University of Denmark, Ørsteds Plads, B 345B, 2800 Lyngby, Denmark. Fax: XX XXXX XXXX; Tel: XX XXXX XXXX; E-mail: ibchork@fysik.dtu.dk}}
-%\footnotetext{\textit{$^{b}$~CINF, Department of Physics, Technical University of Denmark, Fysikvej 312, 2800 Lyngby, Denmark}}
-
-%additional addresses can be cited as above using the lower-case letters, c, d, e... If all authors are from the same address, no letter is required
-
-%\footnotetext{\ddag~Additional footnotes to the title and authors can be included \emph{e.g.}\ `Present address:' or `These authors contributed equally to this work' as above using the symbols: \ddag, \textsection, and \P. Please place the appropriate symbol next to the author's name and include a \texttt{\textbackslash footnotetext} entry in the the correct place in the list.}
-
 CO oxidation is one of the most studied reactions due to its importance in both automotive catalysis and in the removal of trace CO in hydrogen streams. A large effort and a large number of experiments with a variety of surface sensitive techniques have been conducted on single crystal surfaces greatly improving the understanding of this reaction. Single crystal surfaces are well suited model systems due to the high degree of achievable control of parameters compared to industrial catalysts. Here we report on studies in a microreactor model system of Pt nanoparticles. The size-selected nanoparticles supported on a SiO$_2$ substrate show oscillatory behavior of CO oxidation at atmospheric pressure.
 
 Oscillating reactions on single crystals at UHV conditions have been studied extensively and is know to originate from surface reconstructions of the surface during the oscillations\cite{Ertl2008}. It has previously been shown\cite{SALES1982} that CO oxidation at atmospheric pressures also shows oscillatory behavior on single crystals of Pt, Pd and Ir. Recent studies have proposed a mechanism on Pd \cite{Hendriksen2010} attributed to a cycle of surface oxide formation, oxide roughening and clean metal surface formation. CO oxidation oscillations has also been observed on Pt thin films\cite{Lund2000}, in macroscopic flow reactors\cite{Singh2010} and on Pt nanoparticles synthesized from wet chemical synthesis and subsequent annealing \cite{Carlsson2006}. Here we investigate CO oscillations in a microreactor model system on size selected Pt nanoparticles by high sensitivity mass spectrometry.
@@ -244,91 +227,7 @@ An interesting feature in the data is the very large temperature dependence on o
 \section{Conclusion}
 Self-sustained CO oxidation oscillations at atmospheric pressure on Pt nanoparticles ranging from from 3\,nm to 9\,nm have been measured with high-quality mass-spectrometry. It was found that the samples increased the oscillation period over time and showed a strong temperature dependence. A model is proposed where the nanoparticles go through repetitive oxidation/reduction cycles which change the change rate of CO oxidation on the particles.
 
-%\subsection{This is the subsection heading style}
-%Section headings can be typeset with and without numbers.\cite{Gong2004} \cite{Hendriksen2010}
-
-%\subsubsection{This is the subsubsection style.~~} These headings should end in a full point.  
-
-%\paragraph{This is the next level heading.~~} For this level please use \texttt{\textbackslash paragraph}. These headings should also end in a full point.
-
-%\section{Equations}
-
-%Equations can be typeset inline \textit{e.g.} $ y = mx + c$ or displayed with and without numbers:
-
-% \[ A = \pi r^2 \]
-
-%\begin{equation}
-%  \frac{\mathrm{\gamma}}{\mathrm{\epsilon}x} r^2 = 2r
-%\end{equation}
-
-%\section{Graphics and tables}
-%\subsection{Graphics}
-%Graphics should be inserted on the page where they are first mentioned (unless they are equations, which appear in the flow of the text).
-
-
-
-%\subsection{Tables}
-%Tables typeset in RSC house style do not include vertical lines. Table footnote symbols are lower-case italic letters and are typeset at the bottom of the table. Table captions do not end in a full point.
-
-
-%\begin{table}[h]
-%\small
-%  \caption{\ An example of a caption to accompany a table}
-%  \label{tbl:example}
-%  \begin{tabular*}{0.5\textwidth}{@{\extracolsep{\fill}}lll}
-%    \hline
-%    Header one/units & Header two & Header three \\
-%    \hline
-%    1 & 2 & 3 \\
-%    4 & 5 & 6 \\
-%    7 & 8 & 9 \\
-%    10 & 11 & 12 \\
-%    \hline
-%  \end{tabular*}
-%\end{table}
-
-%Adding notes to tables can be complicated.  Perhaps the easiest
-%method is to generate these manually.
-
-% an example of a two-column table
-%\begin{table*}
-%\small
-  %\caption{\ An example of a caption to accompany a table, table captions do not end in a full point}
-  %\label{tbl:example}
-  %\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}lllllll}
-    %\hline
-    %Header one & Header two & Header three & Header four & Header five & Header six  & Header seven\\
-    %\hline
-    %1 & 2 & 3 & 4 & 5 & 6  & 7\\
-    %8 & 9 & 10 & 11 & 12 & 13 & 14 \\
-    %15 & 16 & 17 & 18 & 19 & 20 & 21\\
-    %\hline
-  %\end{tabular*}
-%\end{table*}
-
-%You can also put lists into the text. You can have bulleted or numbered lists of almost any kind. 
-%The \texttt{mhchem} package can also be used so
-%that formulae are easy to input: \texttt{\textbackslash ce\{H2SO4\}} gives \ce{H2SO4}. 
-
-
-%\section{Conclusions}
-%The conclusions section should come at the end of article. For the reference section, the style file rsc.bst can be used to generate the correct reference style.\footnote[4]{Footnotes should appear here. These might include comments relevant to but not central to the matter under discussion, limited experimental and spectral data, and crystallographic data.}
- %For footnotes in the main text of the article please number the footnotes to avoid duplicate symbols. e.g.  \footnote[num]{your text} the corresponding author \ast counts as footnote 1, ESI as footnote 2, e.g. if there is no ESI, please start at [num]=[2], if ESI is cited in the title please start at [num]=[3] etc. Please also cite the ESI within the main body of the text using \dag.
-
-
-
-
-
-%The \balance command can be used to balance the columns on the final page if desired. It should be placed anywhere within the first column of the last page.
-
-%\balance
-
-%If notes are included in your references you can change the title from 'References' to 'Notes and references' using the following command:
-%\renewcommand\refname{Notes and references}
-
-\footnotesize{
 \bibliography{literature} %your .bib file
-\bibliographystyle{rsc} %the RSC's .bst file
-}
+
 
 \end{document}
