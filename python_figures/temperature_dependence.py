@@ -60,7 +60,7 @@ axis2.tick_params(direction='in', length=6, width=1, colors='k',labelsize=8,axis
 
 axis.set_ylabel('SEM Current / nA', fontsize=8)
 axis2.set_ylabel('Temperature / $^\circ$C', fontsize=8)
-axis.set_xlabel('Time/minutes', fontsize=8)
+axis.set_xlabel('Time / minutes', fontsize=8)
 
 #plt.tight_layout()
 #plt.show()

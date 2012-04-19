@@ -70,8 +70,8 @@ axis_array[0].annotate('CO$_2$', xy=(725, 1.7),  xycoords='data', xytext=(715, 0
 axis_array[0].annotate('T', xy=(728, 4.9),  xycoords='data', xytext=(720, 5.3), textcoords='data', arrowprops=arrow, horizontalalignment='right', verticalalignment='center',fontsize=8,)
 
 axis_array[1].set_ylabel('SEM Current / nA', fontsize=8)
-axis2_array[1].set_ylabel('Temperature', fontsize=8)
-axis_array[2].set_xlabel('Time/minutes', fontsize=8)
+axis2_array[1].set_ylabel('Temperature / $^\circ$C', fontsize=8)
+axis_array[2].set_xlabel('Time / minutes', fontsize=8)
 
 
 #plt.tight_layout()

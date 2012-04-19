@@ -94,8 +94,8 @@ axis.set_xlim(0,3100)
 axis.tick_params(direction='in', length=6, width=2, colors='k',labelsize=8,axis='both',pad=3)
 axis.grid(True)    
 
-axis.set_ylabel('Oscillations periods / minutes', fontsize=8)
-axis.set_xlabel('Time/minutes', fontsize=8)
+axis.set_ylabel('Oscillation periods / minutes', fontsize=8)
+axis.set_xlabel('Time / minutes', fontsize=8)
 
 
 

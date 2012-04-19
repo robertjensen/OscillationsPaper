@@ -76,7 +76,7 @@ axis2.tick_params(direction='in', length=6, width=1, colors='k',labelsize=8,axis
 
 axis.set_ylabel('SEM Current / nA', fontsize=8)
 axis2.set_ylabel('Temperature / $^\circ$C', fontsize=8)
-axis.set_xlabel('Time/minutes', fontsize=8)
+axis.set_xlabel('Time / minutes', fontsize=8)
 
 
 
@@ -98,7 +98,7 @@ axis.set_ylabel('SEM Current / nA', fontsize=8)
 axis2.set_ylabel('', fontsize=8)
 axis.set_xticks((465,475,485))
 axis2.set_yticks(())
-axis.set_xlabel('Time/minutes', fontsize=8)
+axis.set_xlabel('Time / minutes', fontsize=8)
 axis.tick_params(direction='in', length=6, width=1, colors='k',labelsize=8,axis='both',pad=3)
 axis2.tick_params(direction='in', length=6, width=1, colors='k',labelsize=8,axis='both',pad=3)
 
@@ -121,7 +121,7 @@ axis.text(718,4.3,"T",fontsize=8,)
 axis.set_xlim(710,740)
 axis.set_yticks(())
 axis2.set_ylabel('Temperature / $^\circ$C', fontsize=8)
-axis.set_xlabel('Time/minutes', fontsize=8)
+axis.set_xlabel('Time / minutes', fontsize=8)
 axis.tick_params(direction='in', length=6, width=1, colors='k',labelsize=8,axis='both',pad=3)
 axis2.tick_params(direction='in', length=6, width=1, colors='k',labelsize=8,axis='both',pad=3)
 

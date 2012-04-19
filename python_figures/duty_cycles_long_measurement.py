@@ -101,7 +101,7 @@ axis.grid(False)
 
 #axis.set_ylabel('SEM Current / nA', fontsize=20)
 axis.set_ylabel('Integrated charge (a.u.)', fontsize=8)
-axis.set_xlabel('Time/minutes', fontsize=8)
+axis.set_xlabel('Time / minutes', fontsize=8)
 
 
 
