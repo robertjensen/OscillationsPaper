@@ -84,7 +84,7 @@ axis.tick_params(direction='in', length=6, width=2, colors='k',labelsize=8,axis=
 axis.grid(False)    
 
 axis.set_ylabel('Oscil. period / minutes', fontsize=8)
-axis.set_xlabel('Time / minutes', fontsize=8)
+axis.set_xlabel('Time / min', fontsize=8)
 
 a = plt.axes([.18, .65, .3, .15], axisbg='w')
 a.plot(oscillations, periods, 'b,')

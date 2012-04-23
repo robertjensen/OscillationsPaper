@@ -74,8 +74,9 @@ for i in range(1,len(oscillations)):
 
 fig = plt.figure()
 fig.subplots_adjust(bottom=0.2) # Make room for x-label
+fig.subplots_adjust(right=0.9) # Make room for second y-label
 ratio = 0.61803398              # Golden mean
-fig_width = 9
+fig_width = 12
 fig_width = fig_width /2.54     # width in cm converted to inches
 fig_height = fig_width*ratio
 fig.set_size_inches(fig_width,fig_height)
@@ -92,13 +93,19 @@ axis.set_ylim(0,50)
 axis.set_xlim(0,3100)
 
 axis.tick_params(direction='in', length=6, width=2, colors='k',labelsize=8,axis='both',pad=3)
-axis.grid(True)    
+axis.grid(False)    
 
-axis.set_ylabel('Oscillation periods / minutes', fontsize=8)
-axis.set_xlabel('Time / minutes', fontsize=8)
+axis.set_ylabel('Oscillation period / minutes', fontsize=8)
+axis.set_xlabel('Time / min', fontsize=8)
 
-
-
+axis2 = axis.twinx()
+#axis2.plot(data['CO_FLOW'][:,0], data['CO_FLOW'][:,1], 'r-')
+axis2.plot(data['CO_FLOW'][:,0], data['CO_FLOW'][:,1]/(4+data['CO_FLOW'][:,1]), 'k-')
+axis2.set_xlim(0,3100)
+axis2.set_ylim(0,0.15)
+axis2.set_ylabel('CO/O$_2$-ratio', fontsize=8)    
+#axis2.set_yticks((0.025,0.05,0.075,0.1,0.125))
+axis2.tick_params(direction='in', length=6, width=2, colors='k',labelsize=8,axis='both',pad=3)
 
 
 

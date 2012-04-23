@@ -33,7 +33,7 @@ fig.subplots_adjust(bottom=0.1) # Make room for x-label
 fig.subplots_adjust(right=0.85) # Make room for right y-label
 #ratio = 0.61803398              # Golden mean
 ratio = 1
-fig_width = 9
+fig_width = 12
 fig_width = fig_width /2.54     # width in cm converted to inches
 fig_height = fig_width*ratio
 fig.set_size_inches(fig_width,fig_height)
@@ -71,7 +71,7 @@ axis_array[0].annotate('T', xy=(728, 4.9),  xycoords='data', xytext=(720, 5.3), 
 
 axis_array[1].set_ylabel('SEM Current / nA', fontsize=8)
 axis2_array[1].set_ylabel('Temperature / $^\circ$C', fontsize=8)
-axis_array[2].set_xlabel('Time / minutes', fontsize=8)
+axis_array[2].set_xlabel('Time / min', fontsize=8)
 
 
 #plt.tight_layout()

@@ -34,7 +34,7 @@ fig.subplots_adjust(bottom=0.2) # Make room for x-label
 
 #ratio = 0.61803398             # Golden mean
 ratio = 0.4                     # This figure should be very wide to span two columns
-fig_width = 17
+fig_width = 16
 fig_width = fig_width /2.54     # width in cm converted to inches
 fig_height = fig_width*ratio
 fig.set_size_inches(fig_width,fig_height)
@@ -61,7 +61,7 @@ axis2.tick_params(direction='in', length=6, width=1, colors='k',labelsize=8,axis
 
 axis.set_ylabel('SEM Current / nA', fontsize=8)
 axis2.set_ylabel('Temperature / $^\circ$C', fontsize=8)
-axis.set_xlabel('Time / minutes', fontsize=8)
+axis.set_xlabel('Time / min', fontsize=8)
 
 
 positions = []

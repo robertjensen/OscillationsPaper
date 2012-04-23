@@ -36,7 +36,7 @@ fig.subplots_adjust(right=0.85) # Make room for second y-label
 
 #ratio = 0.61803398           # Golden mean
 ratio = 0.9
-fig_width = 9
+fig_width = 12
 fig_width = fig_width /2.54        # width in cm converted to inches
 fig_height = fig_width*ratio
 fig.set_size_inches(fig_width,fig_height)
@@ -76,7 +76,7 @@ axis2.tick_params(direction='in', length=6, width=1, colors='k',labelsize=8,axis
 
 axis.set_ylabel('SEM Current / nA', fontsize=8)
 axis2.set_ylabel('Temperature / $^\circ$C', fontsize=8)
-axis.set_xlabel('Time / minutes', fontsize=8)
+axis.set_xlabel('Time / min', fontsize=8)
 
 
 
@@ -88,7 +88,7 @@ axis.set_ylim(0,6)
 axis.set_yticks((1,3,5))
 axis.text(463,1.2,"CO",fontsize=8,)
 axis.text(465,2.3,"CO$_2$",fontsize=8,)
-axis.text(470,4.9,"T",fontsize=8,)
+axis.text(470,4.9,"Temp.",fontsize=8,)
 axis2 = axis.twinx()
 axis2.plot(data['TEMPERATURE'][:,0], data['TEMPERATURE'][:,1], 'b-')
 axis2.set_ylim(0,300)
@@ -98,7 +98,7 @@ axis.set_ylabel('SEM Current / nA', fontsize=8)
 axis2.set_ylabel('', fontsize=8)
 axis.set_xticks((465,475,485))
 axis2.set_yticks(())
-axis.set_xlabel('Time / minutes', fontsize=8)
+axis.set_xlabel('Time / min', fontsize=8)
 axis.tick_params(direction='in', length=6, width=1, colors='k',labelsize=8,axis='both',pad=3)
 axis2.tick_params(direction='in', length=6, width=1, colors='k',labelsize=8,axis='both',pad=3)
 
@@ -117,11 +117,11 @@ axis2.set_yticks((50,150,250))
 axis.set_xticks((715,725,735))
 axis.text(715,0.8,"CO",fontsize=8,)
 axis.text(722,3.4,"CO$_2$",fontsize=8,)
-axis.text(718,4.3,"T",fontsize=8,)
+axis.text(718,4.3,"Temp.",fontsize=8,)
 axis.set_xlim(710,740)
 axis.set_yticks(())
 axis2.set_ylabel('Temperature / $^\circ$C', fontsize=8)
-axis.set_xlabel('Time / minutes', fontsize=8)
+axis.set_xlabel('Time / min', fontsize=8)
 axis.tick_params(direction='in', length=6, width=1, colors='k',labelsize=8,axis='both',pad=3)
 axis2.tick_params(direction='in', length=6, width=1, colors='k',labelsize=8,axis='both',pad=3)
 
