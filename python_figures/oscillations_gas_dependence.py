@@ -95,4 +95,4 @@ for i in range(0,steps-1):
 
 #plt.tight_layout()
 #plt.show()
-plt.savefig('../oscillations_gas_dependence.png',dpi=300)
+plt.savefig('../oscillations_gas_dependence.eps')

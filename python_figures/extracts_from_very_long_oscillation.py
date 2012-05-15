@@ -76,4 +76,4 @@ axis_array[2].set_xlabel('Time / min', fontsize=8)
 
 #plt.tight_layout()
 #plt.show()
-plt.savefig('../extracts_from_very_long_oscillation.png',dpi=300)
+plt.savefig('../extracts_from_very_long_oscillation.eps')

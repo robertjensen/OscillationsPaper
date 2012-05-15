@@ -64,4 +64,4 @@ axis.set_xlabel('Time / min', fontsize=8)
 
 #plt.tight_layout()
 #plt.show()
-plt.savefig('../temperature_dependence.png',dpi=300)
+plt.savefig('../temperature_dependence.eps')

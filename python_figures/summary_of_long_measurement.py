@@ -93,4 +93,4 @@ plt.setp(a, xlim=(700,1500), ylim=(2,8),xticks=[900,1100,1300], yticks=[3,5,7])
 
 #plt.tight_layout()
 #plt.show()
-plt.savefig('../summary_of_long_measurement.png',dpi=300)
+plt.savefig('../summary_of_long_measurement.eps')

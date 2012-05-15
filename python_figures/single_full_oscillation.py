@@ -103,4 +103,4 @@ for pos in positions:
 
 #plt.tight_layout()
 plt.show()
-plt.savefig('../single_full_oscillation.png',dpi=300)
+plt.savefig('../single_full_oscillation.eps')

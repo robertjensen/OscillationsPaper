@@ -131,4 +131,4 @@ axis.grid(False)
 
 #plt.tight_layout()
 plt.show()
-plt.savefig('../initial_treatment.png',dpi=300)
+plt.savefig('../initial_treatment.eps')
