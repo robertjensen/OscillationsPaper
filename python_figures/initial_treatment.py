@@ -6,6 +6,7 @@ import numpy as np
 import MySQLdb
 from matplotlib.patches import Rectangle
 
+matplotlib.rc('text',usetex=True) # Magic fix for the font warnings
 
 try:
     db = MySQLdb.connect(host="servcinf", user="cinf_reader",passwd = "cinf_reader", db = "cinfdata")
@@ -59,16 +60,16 @@ axis2 = axis.twinx()
 axis2.plot(data['TEMPERATURE'][:,0], data['TEMPERATURE'][:,1], 'b-')
 axis2.set_ylim(0,300)
 axis2.set_yticks((50,150,250))
-axis.set_xlim(100,800)
+axis.set_xlim(250,800)
 axis.grid(False)    
 
 
 
 #arrow = dict(facecolor='black', shrink=0.085,width=1)
 arrow = dict(facecolor='black',arrowstyle='->')
-axis.annotate('M28', xy=(260, 2.6),  xycoords='data', xytext=(185, 3.5), textcoords='data', arrowprops=arrow, horizontalalignment='right', verticalalignment='center',fontsize=9,)
-axis.annotate('M44', xy=(440, 4.4),  xycoords='data', xytext=(390, 5.6), textcoords='data', arrowprops=arrow, horizontalalignment='right', verticalalignment='center',fontsize=9,)
-axis.annotate('Temp.', xy=(440, 6.6),  xycoords='data', xytext=(270, 7.2), textcoords='data', arrowprops=arrow, horizontalalignment='right', verticalalignment='center',fontsize=9,)
+axis.annotate('CO', xy=(375, 2.4),  xycoords='data', xytext=(350, 1.1), textcoords='data', arrowprops=arrow, horizontalalignment='right', verticalalignment='center',fontsize=8,)
+axis.annotate('CO$_2$', xy=(420, 3.7),  xycoords='data', xytext=(460, 5.4), textcoords='data', arrowprops=arrow, horizontalalignment='right', verticalalignment='center',fontsize=8,)
+axis.annotate('Temp.', xy=(440, 6.6),  xycoords='data', xytext=(380, 7.2), textcoords='data', arrowprops=arrow, horizontalalignment='right', verticalalignment='center',fontsize=8,)
 
 axis.tick_params(direction='in', length=6, width=1, colors='k',labelsize=8,axis='both',pad=3)
 axis2.tick_params(direction='in', length=6, width=1, colors='k',labelsize=8,axis='both',pad=3)
@@ -85,6 +86,9 @@ axis.plot(data['M28'][:,0], data['M28'][:,1]*1e9, 'r-')
 axis.plot(data['M44'][:,0], data['M44'][:,1]*1e9, 'g-')
 axis.set_ylim(0,6)
 axis.set_yticks((1,3,5))
+axis.text(463,1.2,"CO",fontsize=8,)
+axis.text(465,2.3,"CO$_2$",fontsize=8,)
+axis.text(470,4.9,"T",fontsize=8,)
 axis2 = axis.twinx()
 axis2.plot(data['TEMPERATURE'][:,0], data['TEMPERATURE'][:,1], 'b-')
 axis2.set_ylim(0,300)
@@ -111,6 +115,9 @@ axis2.plot(data['TEMPERATURE'][:,0], data['TEMPERATURE'][:,1], 'b-')
 axis2.set_ylim(0,300)
 axis2.set_yticks((50,150,250))
 axis.set_xticks((715,725,735))
+axis.text(715,0.8,"CO",fontsize=8,)
+axis.text(722,3.4,"CO$_2$",fontsize=8,)
+axis.text(718,4.3,"T",fontsize=8,)
 axis.set_xlim(710,740)
 axis.set_yticks(())
 axis2.set_ylabel('Temperature / $^\circ$C', fontsize=8)
