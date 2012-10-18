@@ -4,6 +4,8 @@ import matplotlib.pyplot as plt
 import numpy as np
 import MySQLdb
 
+matplotlib.rc('text',usetex=True) # Magic fix for the font warnings
+
 try:
     db = MySQLdb.connect(host="servcinf", user="cinf_reader",passwd = "cinf_reader", db = "cinfdata")
 except:
@@ -49,8 +51,8 @@ axis.grid(False)
 
 arrow = dict(facecolor='black',arrowstyle='->')
 #arrow = dict(facecolor='black', shrink=0.085,width=1)
-axis.annotate('M28', xy=(830, 0.85),  xycoords='data', xytext=(800, 0.95), textcoords='data', arrowprops=arrow, horizontalalignment='right', verticalalignment='center',fontsize=9,)
-axis.annotate('M44', xy=(830, 0.4),  xycoords='data', xytext=(800, 0.25), textcoords='data', arrowprops=arrow, horizontalalignment='right', verticalalignment='center',fontsize=9,)
+axis.annotate('CO', xy=(830, 0.85),  xycoords='data', xytext=(800, 0.95), textcoords='data', arrowprops=arrow, horizontalalignment='right', verticalalignment='center',fontsize=9,)
+axis.annotate('CO$_2$', xy=(830, 0.4),  xycoords='data', xytext=(800, 0.25), textcoords='data', arrowprops=arrow, horizontalalignment='right', verticalalignment='center',fontsize=9,)
 axis.annotate('Temp.', xy=(855, 1.15),  xycoords='data', xytext=(810, 1.2), textcoords='data', arrowprops=arrow, horizontalalignment='right', verticalalignment='center',fontsize=9,)
 
 axis.tick_params(direction='in', length=6, width=1, colors='k',labelsize=8,axis='both',pad=3)

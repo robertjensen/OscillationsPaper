@@ -5,6 +5,8 @@ import matplotlib.pyplot as plt
 import numpy as np
 import MySQLdb
 
+matplotlib.rc('text',usetex=True) # Magic fix for the font warnings
+
 try:
     db = MySQLdb.connect(host="servcinf", user="cinf_reader",passwd = "cinf_reader", db = "cinfdata")
 except:
@@ -61,6 +63,11 @@ for i in range(0,3):
     axis_array[i].tick_params(direction='in', length=6, width=1, colors='k',labelsize=8,axis='both',pad=2)
     axis2_array[i].tick_params(direction='in', length=6, width=1, colors='k',labelsize=8,axis='y',pad=2)
     axis_array[i].grid(False)    
+
+arrow = dict(facecolor='black',arrowstyle='->')
+axis_array[0].annotate('CO', xy=(710, 3.9),  xycoords='data', xytext=(710, 5.7), textcoords='data', arrowprops=arrow, horizontalalignment='right', verticalalignment='center',fontsize=8,)
+axis_array[0].annotate('CO$_2$', xy=(725, 1.7),  xycoords='data', xytext=(715, 0.5), textcoords='data', arrowprops=arrow, horizontalalignment='right', verticalalignment='center',fontsize=8,)
+axis_array[0].annotate('T', xy=(728, 4.9),  xycoords='data', xytext=(720, 5.3), textcoords='data', arrowprops=arrow, horizontalalignment='right', verticalalignment='center',fontsize=8,)
 
 axis_array[1].set_ylabel('SEM Current / nA', fontsize=8)
 axis2_array[1].set_ylabel('Temperature', fontsize=8)
