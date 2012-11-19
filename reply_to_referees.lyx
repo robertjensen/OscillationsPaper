@@ -1,0 +1,200 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation skip
+\defskip smallskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Response to reviewers
+\end_layout
+
+\begin_layout Section*
+Referee: 1
+\end_layout
+
+\begin_layout Standard
+It is indeed correct, that no charecterization of nano-particles.
+ In situ-charecterization is unfortunately not possible in the 
+\begin_inset Formula $\mu-$
+\end_inset
+
+reactor platform.
+ It is also correct that the explanation of the osciallations is inspired
+ by litterature and not by direct evidence from the results.
+ However, we do believe that mass spectrometer data found in this study
+ is an addition to the existing data in litterature and thus it is our belive
+ that our study provides further experimental support of the existing model
+ first proposed in ref.
+ 3.
+\end_layout
+
+\begin_layout Section*
+Referee: 2
+\end_layout
+
+\begin_layout Standard
+Skal vi indføre endnu flere referencer, måske nogle fra da vi prøvede acs
+ nano?
+\end_layout
+
+\begin_layout Standard
+i) We are sorry for the confusing use of the word ignition, the manuscript
+ has been revised to use terms more appropriate in this context.
+\end_layout
+
+\begin_layout Standard
+ii) We are very much aware that the particles might show structural changes
+ during the oscillation cycle.
+ However, the fact that the conversion rate is unchanged during very long
+ timescales does lead us to belive that it not a likely scenario.
+ Notice that the oscillations are reproduceble on a quite large varity of
+ sizes which we belive also points againts a structual change as the primary
+ oscillation mechanism.
+ This does not mean that particles do not change shape during the cycle,
+ more that we do not expect this to be the cause of the oscillations.
+\end_layout
+
+\begin_layout Standard
+iii) While TEM is not entirely impossible, it is very difficult to get images
+ under realistic conditions, because the 
+\begin_inset Formula $\mu-$
+\end_inset
+
+reactor platform is not well suited for TEM due to the substrate thickness
+ of several hundred 
+\begin_inset Formula $\mu$
+\end_inset
+
+m.
+ We have tried to mechanically break reactors in the hope that small fragments
+ will SiO
+\begin_inset Formula $_{2}$
+\end_inset
+
+ will extend out in to the vacuum and allow imaging of particles that might
+ be positioned on these fragments.
+ However, this is very time consuming and has so far not succeeded in giving
+ us good images of nano-particles after reaction.
+ As-deposited images is not difficult to get, since they can be deposited
+ on substrates more suitable for TEM, howewer this would not bring any insight
+ into possible morphology change during reaction conditions.
+\end_layout
+
+\begin_layout Standard
+iv) Similar to the answer for question ii) we do not expect facets to be
+ the driving mechanisms for the oscillations, basically because we will
+ then expect a much more pronounced size dependence of the oscillations.
+\end_layout
+
+\begin_layout Standard
+v) Af for dælen....
+ det bliver ikke specielt nemt....Prøv at indarbejde modellen fra Kasemo, ref.
+ 12
+\end_layout
+
+\begin_layout Standard
+vi) We are ourselves vey much in doubt whether the reaction is iso-thermal
+ on a microscopic level .
+ On one hand the free energy pr.
+ reaction is quite large and possibly distriuted on a rather small amount
+ of nanoparticles.
+ On the other hand heat transport in a small volume at 1bar should be very
+ efficient.
+ As mentioned in the paper, we have done several attempts at observing a
+ possible sign local temperature effects, so far without results.
+ Thus one so far has to conclude that the experimental results points towards
+ constant temperature also at the microscopic level, but we are not confident
+ enough in this yet to draw solid conclusions.
+\end_layout
+
+\begin_layout Standard
+vii) We belive that even though we suggest a surface effect as the responsible
+ mechanism for the oscillations, the gas phase can still act as the 
+\begin_inset Quotes eld
+\end_inset
+
+synchronizer
+\begin_inset Quotes erd
+\end_inset
+
+ because the changing gas-composition will colllectively either oxidize
+ or reduce the particles through the oscillation cycle.
+ Also one should notice that for a given sample, the temperature windows
+ which shows oscillations, is rather small, showing that the synchronization
+ is not very robust but depends on rather carefull parameter tuning.
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\begin_layout Standard
+Best regards,
+\end_layout
+
+\begin_layout Standard
+Robert Jensen, Thomas Andersen, Anders Nierhoff 
+\begin_inset Newline newline
+\end_inset
+
+Thomas Pedersen, Ole Hansen, Søren Dahl, Ib Chorkendorff
+\end_layout
+
+\end_body
+\end_document
