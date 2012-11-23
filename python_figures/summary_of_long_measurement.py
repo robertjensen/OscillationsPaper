@@ -70,11 +70,11 @@ errfunc = lambda p, x, y: fitfunc(p, x) - y # Distance to the target function
 p0 = [0.2,0.6,2] # Initial guess for the parameters
 p1, success = optimize.leastsq(errfunc, p0[:], args=([700,1000,2000,4000,6000],[4,6,20,37,45]),maxfev=1000)
 print p1, success
-axis.plot(range,p1[0]*(range**(p1[1]))+p1[2],'r-')
+axis.plot(range,p1[0]*(range**(p1[1]))+p1[2],'r--')
 
 p1, success = optimize.leastsq(errfunc, p0[:], args=([500,1000,2000,4000,6000],[0,2,9,11,16]),maxfev=1000)
 print p1, success
-axis.plot(range,p1[0]*(range**(p1[1]))+p1[2],'r-')
+axis.plot(range,p1[0]*(range**(p1[1]))+p1[2],'r--')
 #axis.plot(data['M28'][:,0], data['M28'][:,1], 'r-')
 #axis.plot(data['M44'][:,0], data['M44'][:,1], 'b-')
 #axis.set_ylim(0,7)
@@ -84,7 +84,7 @@ axis.tick_params(direction='in', length=6, width=2, colors='k',labelsize=8,axis=
 axis.grid(False)    
 
 axis.set_ylabel('Oscil. period / minutes', fontsize=8)
-axis.set_xlabel('Time/minutes', fontsize=8)
+axis.set_xlabel('Time / min', fontsize=8)
 
 a = plt.axes([.18, .65, .3, .15], axisbg='w')
 a.plot(oscillations, periods, 'b,')

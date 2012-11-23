@@ -59,7 +59,7 @@ axis2_array = []
 for i in range(0,steps-1):
     axis_array.append(fig.add_subplot(6,3,i+1))
     axis_array[i].plot(data['M28'][:,0], data['M28'][:,1]*1e9, 'r-')
-    axis_array[i].plot(data['M44'][:,0], data['M44'][:,1]*1e9, 'b-')
+    axis_array[i].plot(data['M44'][:,0], data['M44'][:,1]*1e9, 'g-')
     #axis_array[i].set_ylim(0,0.1*(i+1)*1.85)
     axis_array[i].set_ylim(0,1.5)
     axis_array[i].set_yticks((0.25,0.5,0.75,1,1.25))
@@ -95,4 +95,4 @@ for i in range(0,steps-1):
 
 #plt.tight_layout()
 #plt.show()
-plt.savefig('../oscillations_gas_dependence_supplemental.png',dpi=300)
+plt.savefig('../oscillations_gas_dependence.png',dpi=300)
