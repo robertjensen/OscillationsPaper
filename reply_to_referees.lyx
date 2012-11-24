@@ -70,20 +70,30 @@ Reply to referees
 
 \begin_layout Standard
 We are sorry that referee 1 did not like the paper, however it has never
- been our intention to do a thorough review of the filed, but to report
+ been our intention to do a thorough review of the field, but to report
  our findings in a system of size-selected nanoparticles deposited in a
  clean environment.
  We hope that the corrections we have done to the manuscript according to
- referee 2 also meets some of your whishes for improvement for the manuscript.
+ the construtive suggestions from referee 2 also meets some of referee 1's
+ whishes for improvement of the manuscript.
 \end_layout
 
 \begin_layout Standard
-We are very pleases that referee 3 likes that manuscript and hope that the
+We are very pleased that referee 3 likes that manuscript and hope that the
  referee will also like the revisions in this version.
 \end_layout
 
 \begin_layout Section*
 Reply to specific questions from referee 2:
+\end_layout
+
+\begin_layout Standard
+We thank for the suggestions of adding more references to the introduction.
+ Several of the mentioned references are now included in the paper.
+\end_layout
+
+\begin_layout Standard
+Please find our comments to the specific questions below:
 \end_layout
 
 \begin_layout Standard
@@ -95,10 +105,10 @@ i) We are sorry for the confusing use of the word ignition, the manuscript
 ii) We are very much aware that the particles might show structural changes
  during the oscillation cycle.
  However, the fact that the conversion rate is unchanged during very long
- timescales does lead us to belive that it not a likely scenario.
- Notice that the oscillations are reproduceble on a quite large varity of
- sizes which we belive also points againts a structual change as the primary
- oscillation mechanism.
+ timescales does lead us to believe that it not a likely scenario.
+ Notice that the oscillations are reproducible on a quite large variety
+ of sizes which we believe also points against a structural change as the
+ primary oscillation mechanism.
  This does not mean that particles do not change shape during the cycle,
  more that we do not expect this to be the cause of the oscillations or
  the increasing oscillation period.
@@ -127,8 +137,16 @@ m.
  However, this is very time consuming and has so far not succeeded in giving
  us good images of nano-particles after reaction.
  As-deposited images is not difficult to get, since they can be deposited
- on substrates more suitable for TEM, howewer this would not bring any insight
+ on substrates more suitable for TEM, however this would not bring any insight
  into possible morphology change during reaction conditions.
+ In the revised manuscript, we have added a TEM image of a particle deposited
+ on a substrate similar to the 
+\begin_inset Formula $\mu-$
+\end_inset
+
+reactor in the supplementary information along with the same explanation
+ as given in this reply as to why TEM is extremely difficult on samples
+ after the experiments are performed.
 \end_layout
 
 \begin_layout Standard
@@ -138,16 +156,35 @@ iv) Similar to the answer for question ii) we do not expect facets to be
 \end_layout
 
 \begin_layout Standard
-v) Af for dælen....
- det bliver ikke specielt nemt....Prøv at indarbejde modellen fra Kasemo, ref.
- 12
+v) The model mentioned in ref.
+ 12 (ref.
+ 19 in the revised manuscript) is a Monte Carlo simulation on a system quite
+ similar to the system we present here.
+ However, one of the main results of the paper is a prediction of the smallest
+ nano particle size that will be able to show stable oscillations.
+ This size is predicted to be 4
+\begin_inset space \thinspace{}
+\end_inset
+
+nm which is well above the 3
+\begin_inset space \thinspace{}
+\end_inset
+
+nm which are the size used for most of our results.
+ This points towards some sort of discrepancy in the underlying mechanisms
+ in our system and the theoretically modeled system.
+ A detailed discusion of the differences between the two systems are properly
+ outside of the scope of our paper.
+ 
+\emph on
+!!!! Ib, er dette et brugbart svar???
 \end_layout
 
 \begin_layout Standard
-vi) We are ourselves vey much in doubt whether the reaction is iso-thermal
- on a microscopic level .
+vi) We are ourselves very much in doubt whether the reaction is iso-thermal
+ on a microscopic level.
  On one hand the free energy pr.
- reaction is quite large and possibly distriuted on a rather small amount
+ reaction is quite large and possibly distributed on a rather small amount
  of nanoparticles.
  On the other hand heat transport in a small volume at 1bar should be very
  efficient.
@@ -156,10 +193,11 @@ vi) We are ourselves vey much in doubt whether the reaction is iso-thermal
  Thus one so far has to conclude that the experimental results points towards
  constant temperature also at the microscopic level, but we are not confident
  enough in this yet to draw solid conclusions.
+ The manuscript has been revised to make this point more clear.
 \end_layout
 
 \begin_layout Standard
-vii) We belive that even though we suggest a surface effect as the responsible
+vii) We believe that even though we suggest a surface effect as the responsible
  mechanism for the oscillations, the gas phase can still act as the 
 \begin_inset Quotes eld
 \end_inset
@@ -173,10 +211,6 @@ synchronizer
  Also one should notice that for a given sample, the temperature windows
  which shows oscillations, is rather small, showing that the synchronization
  is not very robust but depends on rather carefull parameter tuning.
-\end_layout
-
-\begin_layout Standard
-
 \end_layout
 
 \begin_layout Standard
