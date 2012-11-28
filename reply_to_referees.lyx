@@ -69,13 +69,23 @@ Reply to referees
 \end_layout
 
 \begin_layout Standard
-We are sorry that referee 1 did not like the paper, however it has never
- been our intention to do a thorough review of the field, but to report
+We are sorry that referee 1 did not like the paper, however, it has never
+ been our intention to do a thorough review of the field but mere to report
  our findings in a system of size-selected nanoparticles deposited in a
  clean environment.
+ We believe that the 
+\begin_inset Formula $\mu-$
+\end_inset
+
+reactor platform is a extremely useful tool for characterizing model catalysts
+ with high sensitivity and fast temperature response.
+ We do also, however, acknowledge that this type of platform have significant
+ challenges ahead for characterization of the particles, as commented by
+ referee 1, and are currently working to gain insight into the particle
+ morphology both in-situ and post mortem of the catalyst.
  We hope that the corrections we have done to the manuscript according to
- the construtive suggestions from referee 2 also meets some of referee 1's
- whishes for improvement of the manuscript.
+ the points from referee 2 also meets some of referee 1's wishes for improvement
+ of the manuscript.
 \end_layout
 
 \begin_layout Standard
@@ -88,8 +98,11 @@ Reply to specific questions from referee 2:
 \end_layout
 
 \begin_layout Standard
-We thank for the suggestions of adding more references to the introduction.
- Several of the mentioned references are now included in the paper.
+The refeere is requesting a broader literature list covering more of the
+ literature.
+ We acknowledge this and have added more references to the introduction.
+ Several of the mentioned references by the referee are now included in
+ the paper.
 \end_layout
 
 \begin_layout Standard
@@ -97,12 +110,24 @@ Please find our comments to the specific questions below:
 \end_layout
 
 \begin_layout Standard
-i) We are sorry for the confusing use of the word ignition, the manuscript
- has been revised to use terms more appropriate in this context.
+i) Regarding the use of the word ignition
+\end_layout
+
+\begin_layout Itemize
+The authors acknowledge the comment by the referee
+\end_layout
+
+\begin_layout Itemize
+The manuscript has been revised to use the term more appropriately in this
+ context.
 \end_layout
 
 \begin_layout Standard
-ii) We are very much aware that the particles might show structural changes
+ii) Comment of the structural change of the particles during reaction 
+\end_layout
+
+\begin_layout Itemize
+We are very much aware that the particles might show structural changes
  during the oscillation cycle.
  However, the fact that the conversion rate is unchanged during very long
  timescales does lead us to believe that it not a likely scenario.
@@ -112,17 +137,29 @@ ii) We are very much aware that the particles might show structural changes
  This does not mean that particles do not change shape during the cycle,
  more that we do not expect this to be the cause of the oscillations or
  the increasing oscillation period.
- The manuscript has been revised to make this point more clear.
+ 
+\end_layout
+
+\begin_layout Itemize
+The manuscript has been revised according to the referee's point to make
+ this more clear.
 \end_layout
 
 \begin_layout Standard
-iii) While TEM is not entirely impossible, it is very difficult to get images
- under realistic conditions, because the 
+iii) Comment of acquiring TEM images of nanoparticles 
+\end_layout
+
+\begin_layout Itemize
+While TEM is not entirely impossible it is very difficult to get images
+ under reaction conditions, because the 
 \begin_inset Formula $\mu-$
 \end_inset
 
-reactor platform is not well suited for TEM due to the substrate thickness
- of several hundred 
+reactor platform is not well suited for TEM due to the SiO
+\begin_inset Formula $_{2}$
+\end_inset
+
+substrate thickness of several hundred 
 \begin_inset Formula $\mu$
 \end_inset
 
@@ -135,12 +172,17 @@ m.
  will extend out in to the vacuum and allow imaging of particles that might
  be positioned on these fragments.
  However, this is very time consuming and has so far not succeeded in giving
- us good images of nano-particles after reaction.
- As-deposited images is not difficult to get, since they can be deposited
- on substrates more suitable for TEM, however this would not bring any insight
- into possible morphology change during reaction conditions.
- In the revised manuscript, we have added a TEM image of a particle deposited
- on a substrate similar to the 
+ us good images of nanoparticles after the reaction.
+ As-deposited images are not difficult to get since they can be deposited
+ on substrates more suitable for TEM.
+ This would, however, not bring any insight into possible morphology change
+ during reaction conditions.
+ 
+\end_layout
+
+\begin_layout Itemize
+As response to the referee's comment we have added a TEM image of a particle
+ deposited on a substrate similar to the 
 \begin_inset Formula $\mu-$
 \end_inset
 
@@ -150,18 +192,29 @@ reactor in the supplementary information along with the same explanation
 \end_layout
 
 \begin_layout Standard
-iv) Similar to the answer for question ii) we do not expect facets to be
- the driving mechanisms for the oscillations, basically because we will
- then expect a much more pronounced size dependence of the oscillations.
+iv) Regarding the facet change of the nanoparticles during reaction 
+\end_layout
+
+\begin_layout Itemize
+We acknowledge the comment made by the referee but do not expect facets
+ to be the driving mechanisms for the oscillations (see answer to question
+ ii)) basically because we will then expect a much more pronounced size
+ dependence of the oscillations.
 \end_layout
 
 \begin_layout Standard
-v) The model mentioned in ref.
+v) Regarding comparison with microkinetic modeling in the mentioned reference
+\end_layout
+
+\begin_layout Itemize
+We agree that a comparison between the microkinetic modeling and experimental
+ study is interesting.
+ The model mentioned in ref.
  12 (ref.
  19 in the revised manuscript) is a Monte Carlo simulation on a system quite
  similar to the system we present here.
  However, one of the main results of the paper is a prediction of the smallest
- nano particle size that will be able to show stable oscillations.
+ nanoparticle size that will be able to show stable oscillations.
  This size is predicted to be 4
 \begin_inset space \thinspace{}
 \end_inset
@@ -173,32 +226,58 @@ nm which is well above the 3
 nm which are the size used for most of our results.
  This points towards some sort of discrepancy in the underlying mechanisms
  in our system and the theoretically modeled system.
- A detailed discusion of the differences between the two systems are properly
- outside of the scope of our paper.
  
-\emph on
-!!!! Ib, er dette et brugbart svar???
+\end_layout
+
+\begin_layout Itemize
+We do, however, believe a detailed discussion of the differences between
+ the two systems are outside the scope of the current paper.
 \end_layout
 
 \begin_layout Standard
-vi) We are ourselves very much in doubt whether the reaction is iso-thermal
+vi) Comment on isotherms during reaction 
+\end_layout
+
+\begin_layout Itemize
+A very valid point made by the referee.
+ We are ourselves are very much in doubt whether the reaction is isothermal
  on a microscopic level.
  On one hand the free energy pr.
  reaction is quite large and possibly distributed on a rather small amount
  of nanoparticles.
- On the other hand heat transport in a small volume at 1bar should be very
+ On the other hand, heat transport in a small volume at 1bar should be very
  efficient.
  As mentioned in the paper, we have done several attempts at observing a
- possible sign local temperature effects, so far without results.
+ possible sign for local temperature effects but so far without results.
  Thus one so far has to conclude that the experimental results points towards
- constant temperature also at the microscopic level, but we are not confident
+ constant temperature also at the microscopic level but we are not confident
  enough in this yet to draw solid conclusions.
- The manuscript has been revised to make this point more clear.
+ 
+\end_layout
+
+\begin_layout Itemize
+The manuscript has been revised to make this point more clear.
 \end_layout
 
 \begin_layout Standard
-vii) We believe that even though we suggest a surface effect as the responsible
- mechanism for the oscillations, the gas phase can still act as the 
+vii) Question regarding measurement of the O
+\begin_inset Formula $_{2}$
+\end_inset
+
+/CO
+\begin_inset Formula $_{2}$
+\end_inset
+
+ratio in the reactor.
+\end_layout
+
+\begin_layout Standard
+viii) Comment regarding the synchronization of the oscillations
+\end_layout
+
+\begin_layout Itemize
+We believe that even though we suggest a surface effect as the responsible
+ mechanism for the oscillations the gas phase can still act as the 
 \begin_inset Quotes eld
 \end_inset
 
@@ -206,11 +285,11 @@ synchronizer
 \begin_inset Quotes erd
 \end_inset
 
- because the changing gas-composition will colllectively either oxidize
- or reduce the particles through the oscillation cycle.
- Also one should notice that for a given sample, the temperature windows
- which shows oscillations, is rather small, showing that the synchronization
- is not very robust but depends on rather carefull parameter tuning.
+ because the changing gas-composition will collectively either oxidize or
+ reduce the particles through the oscillation cycle.
+ Also, it should be noticed that for a given sample the temperature windows
+ which shows oscillations is rather small indicating that the synchronization
+ is not very robust but depends on rather careful parameter tuning.
 \end_layout
 
 \begin_layout Standard
