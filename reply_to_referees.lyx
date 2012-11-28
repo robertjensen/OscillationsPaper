@@ -28,7 +28,7 @@
 \spacing single
 \use_hyperref false
 \papersize default
-\use_geometry false
+\use_geometry true
 \use_amsmath 1
 \use_esint 1
 \use_mhchem 1
@@ -43,6 +43,8 @@
 \shortcut idx
 \color #008000
 \end_index
+\leftmargin 3cm
+\rightmargin 3cm
 \secnumdepth 3
 \tocdepth 3
 \paragraph_separation skip
@@ -110,7 +112,14 @@ Please find our comments to the specific questions below:
 \end_layout
 
 \begin_layout Standard
-i) Regarding the use of the word ignition
+i) 
+\emph on
+The word "ignition" is not used quite in the way it is usually used.
+ Ignition ofthen implies a sudden rate change that changes the heat generation
+ in the system and an accompanying t increase.
+ The authors should either give their definition of what they mean by ignition
+ or use a different word (inspect e.g.
+ how " catalytic ignition" is used in the relevant literature.
 \end_layout
 
 \begin_layout Itemize
@@ -123,7 +132,15 @@ The manuscript has been revised to use the term more appropriately in this
 \end_layout
 
 \begin_layout Standard
-ii) Comment of the structural change of the particles during reaction 
+ii) 
+\emph on
+Working with nanoparticles there is always a risk/chance that the type of
+ changes that occur in the reaction are associated with structural changes
+ of the nanoparticles themselves.
+ There is some discussion of this topic but that possibility - reversible,
+ oscillatory particle changes in e.g.
+ shape or facet exposure etc.
+ should be more thoroughly considered.
 \end_layout
 
 \begin_layout Itemize
@@ -146,7 +163,11 @@ The manuscript has been revised according to the referee's point to make
 \end_layout
 
 \begin_layout Standard
-iii) Comment of acquiring TEM images of nanoparticles 
+iii) 
+\emph on
+In this context it is a real weakness that there are no TEM micrographs
+ of the particles - would this be possible? This could shed light both on
+ shape changes and on possible multiple facet involvement 
 \end_layout
 
 \begin_layout Itemize
@@ -192,7 +213,12 @@ reactor in the supplementary information along with the same explanation
 \end_layout
 
 \begin_layout Standard
-iv) Regarding the facet change of the nanoparticles during reaction 
+iv) 
+\emph on
+A possibility is that the oscillations are coupled to reaction kinetics
+ that differ on different facets of the nanoparticles.
+ This should at least be mentioned - and if possible singled out as a less
+ or more likely candidate.
 \end_layout
 
 \begin_layout Itemize
@@ -203,7 +229,15 @@ We acknowledge the comment made by the referee but do not expect facets
 \end_layout
 
 \begin_layout Standard
-v) Regarding comparison with microkinetic modeling in the mentioned reference
+v) 
+\emph on
+In ref 12 of the paper the same mechanistic reason as he authors themselves
+ propose - oxidation-reduction of Pt, is suggested , and subject to a rather
+ detailed kinetic modeling.
+ It would then seem plausible that the authors scrutinize this model and
+ explore if it can be reconciled with their own data, or , if not so, they
+ point out the shortcomings of the model.
+ The above points should be more thoroughly treated in the Intro and Discussion.
 \end_layout
 
 \begin_layout Itemize
@@ -230,12 +264,21 @@ nm which are the size used for most of our results.
 \end_layout
 
 \begin_layout Itemize
-We do, however, believe a detailed discussion of the differences between
- the two systems are outside the scope of the current paper.
+The ability to be able to do direct comparisons to theoretical studies is
+ one of the great motivations to be able to apply in-sity methods in our
+ system.
+ However, currently we are not in a situation where we are able to conclude
+ to what degree our system fits with the details of the Monte Carlo study.
 \end_layout
 
 \begin_layout Standard
-vi) Comment on isotherms during reaction 
+vi) 
+\emph on
+It is not quite clear from the presentation if the authors consider the
+ oscillations to be isothermal or not.
+ Although the T curve is flat, this is the macroscopic temperature.
+ What is the actual surface/nanoparticle temperature (I know this is a difficult
+ Q but the authors should try to address it a little deeper).
 \end_layout
 
 \begin_layout Itemize
@@ -260,19 +303,46 @@ The manuscript has been revised to make this point more clear.
 \end_layout
 
 \begin_layout Standard
-vii) Question regarding measurement of the O
-\begin_inset Formula $_{2}$
-\end_inset
+vii) 
+\emph on
+Knowing the flow rate through the reactor and the gas composition at the
+ inlet and outlet (by MS) it should be possible to estimate how much the
+ O2/CO2 ratio varies along the flow reaction for the high rate and low rate
+ regimes of the oscillatory reaction, which in turn will be valuble information
+ for identifying the mechanism.
+ 
+\end_layout
 
-/CO
-\begin_inset Formula $_{2}$
-\end_inset
-
-ratio in the reactor.
+\begin_layout Itemize
+In principle such a calculation could be carried out, however in practice
+ it is quite difficult.
+ The diffusion length of the gas molecules are somewhat larger than the
+ size of the reactor volume and thus the detailes of the gradients becomes
+ quite complex in the case of non full conversion.
+ In the case of full conversion, the gradient might be more straight-forward,
+ but in this case we lack detailed knowledge about the the actual conversion
+ rate of the individual particles.
+ As mentioned in the paper, a very small fraction of the particles might
+ be able to convert all reactans in which case the gradient will be very
+ steep for the first few micrometers, in case the conversion pr.
+ particle is lower, a more constant gradient along the reactor will be expected.
+ 
 \end_layout
 
 \begin_layout Standard
-viii) Comment regarding the synchronization of the oscillations
+viii) 
+\emph on
+Finally one very important point:In order to observe oscillations in the
+ reactant and reaction product concentrations (as the authors do) for a
+ large number supported particles, they need to be reasonably synchronized.
+ The authors should discuss the origin of synchronization.
+ At high pressures the common "synchronizer" are either or both of gas phase
+ gradients in concentrations or the temperature variations.
+ If one excludes them and propose a pure surface effect it is more tricky
+ to find the mechanism.
+ One such mechanism is spill over (see Ref 12 for a brief discussion but
+ there are a few more papers).
+ This should be discussed.
 \end_layout
 
 \begin_layout Itemize
