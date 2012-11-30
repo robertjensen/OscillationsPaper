@@ -86,12 +86,12 @@ reactor platform is a extremely useful tool for characterizing model catalysts
  referee 1, and are currently working to gain insight into the particle
  morphology both in-situ and post mortem of the catalyst.
  We hope that the corrections we have done to the manuscript according to
- the points from referee 2 also meets some of referee 1's wishes for improvement
+ the points from referee 2 also meet some of referee 1's wishes for improvement
  of the manuscript.
 \end_layout
 
 \begin_layout Standard
-We are very pleased that referee 3 likes that manuscript and hope that the
+We are very pleased that referee 3 likes the manuscript and hope that the
  referee will also like the revisions in this version.
 \end_layout
 
@@ -100,14 +100,139 @@ Reply to specific questions from referee 2:
 \end_layout
 
 \begin_layout Standard
-The refeere is requesting a broader literature list covering more of the
- literature.
+The referee is requesting a broader literature list covering more of the
+ existing literature on the subject.
  We acknowledge this and have added more references to the introduction.
  Several of the mentioned references by the referee are now included in
  the paper.
+ The list of added references is:
+\end_layout
+
+\begin_layout Itemize
+C.
+ G.
+ Takoudis, L.
+ D.
+ Schmidt and R.
+ Aris,
+\emph on
+ Surface Science
+\emph default
+, 1981, 105, 325–333.
+\end_layout
+
+\begin_layout Itemize
+E.
+ A.
+ Ivanov, G.
+ A.
+ Chumakov, M.
+ G.
+ Slinko, D.
+ D.
+ Bruns and D.
+ Lu
+\emph on
+ss, Chemical Engineering Science
+\emph default
+, 1980, 35, 795–803.
+\end_layout
+
+\begin_layout Itemize
+R.
+ E.
+ Lagos, B.
+ C.
+ Sales and H.
+ Suhl, 
+\emph on
+Surface Science
+\emph default
+, 1979, 82, 525–539.
+\end_layout
+
+\begin_layout Itemize
+X.
+ Song, L.
+ D.
+ Schmidt and R.
+ Aris, 
+\emph on
+Chemical Engineering Science
+\emph default
+, 1991, 46, 1203–1215.
+\end_layout
+
+\begin_layout Itemize
+I.
+ Ferino and E.
+ Rombi, 
+\emph on
+Catalysis Today
+\emph default
+, 1999, 52, 291–305
+\end_layout
+
+\begin_layout Itemize
+M.
+ A.
+ Liauw, P.
+ J.
+ Plath and N.
+ I.
+ Jaeger, 
+\emph on
+Journal of Chemical Physics
+\emph default
+, 1996, 104, 6375–6386.
+ 
+\end_layout
+
+\begin_layout Itemize
+M.
+ M.
+ Slinko, A.
+ A.
+ Ukharskii, N.
+ V.
+ Peskov and N.
+ I.
+ Jaeger, 
+\emph on
+Catalysis Today
+\emph default
+, 2001, 70, 341–357.
 \end_layout
 
 \begin_layout Standard
+Furthermore two extra paragraphs has been added to the introduction to give
+ the reader a better understanding of the complexity and history of the
+ field of oscillations in CO oxidation catalysis at ambient pressure:
+\end_layout
+
+\begin_layout Itemize
+Already the early theoretical descriptions of the possibility of oscillationary
+ behavior even very simple catalytic systems noticed that even though oscillatio
+n can theoretically occur in many catalytic systems, the details are extremely
+ specific to the given system, and it can thus be difficult to predict how
+ and if a given system will oscillate.
+ 
+\begin_inset Newline newline
+\end_inset
+
+Oscillations in catalytic systems can be quite complex and the parameter
+ space can be very large.
+ In the system investigated in this paper, oscillations could be dependent
+ on morphological parameters of the nanoparticels such as size, shape and
+ exposed facets.
+ Also the oxidation state and possible carbon pollution on the surface could
+ have impact on the system.
+ More macroscopic parameters such as the geometry of the reactor, the temperatur
+e distribution and the distribution of the particles throughout the reactor
+ will also influence the systems ability to show kinetic oscillations.
+\end_layout
+
+\begin_layout Subsection*
 Please find our comments to the specific questions below:
 \end_layout
 
@@ -159,7 +284,19 @@ We are very much aware that the particles might show structural changes
 
 \begin_layout Itemize
 The manuscript has been revised according to the referee's point to make
- this more clear.
+ this more clear, by adding the following paragraph to the discussion:
+\begin_inset Newline newline
+\end_inset
+
+Another possible mechanism behind the increasing oscillation period, could
+ be morphology changes of the nano particles.
+ However, the fact that the oscillations show no clear size dependence in
+ the range of 3 to 9
+\begin_inset space \thinspace{}
+\end_inset
+
+nm suggests that the oscillations are not very dependent on the exact particle
+ morphology.
 \end_layout
 
 \begin_layout Standard
@@ -202,14 +339,14 @@ m.
 \end_layout
 
 \begin_layout Itemize
-As response to the referee's comment we have added a TEM image of a particle
- deposited on a substrate similar to the 
+As response to the referee's comment we have added a section to the supplementar
+y material with a TEM image of a particle deposited on a substrate similar
+ to the 
 \begin_inset Formula $\mu-$
 \end_inset
 
-reactor in the supplementary information along with the same explanation
- as given in this reply as to why TEM is extremely difficult on samples
- after the experiments are performed.
+reactor along with the same explanation as given in this reply as to why
+ TEM is extremely difficult on samples after the experiments are performed.
 \end_layout
 
 \begin_layout Standard
@@ -299,7 +436,14 @@ A very valid point made by the referee.
 \end_layout
 
 \begin_layout Itemize
-The manuscript has been revised to make this point more clear.
+The manuscript has been revised to make this point more clear, by adding
+ the following sentence to the discussion:
+\begin_inset Newline newline
+\end_inset
+
+which would point towards a constant temperature even on the microscopic
+ scale, however the experimental data are so far not good enough to make
+ final conclusions.
 \end_layout
 
 \begin_layout Standard
@@ -317,7 +461,7 @@ Knowing the flow rate through the reactor and the gas composition at the
 In principle such a calculation could be carried out, however in practice
  it is quite difficult.
  The diffusion length of the gas molecules are somewhat larger than the
- size of the reactor volume and thus the detailes of the gradients becomes
+ size of the reactor diameter and thus the detailes of the gradients becomes
  quite complex in the case of non full conversion.
  In the case of full conversion, the gradient might be more straight-forward,
  but in this case we lack detailed knowledge about the the actual conversion
@@ -332,7 +476,7 @@ In principle such a calculation could be carried out, however in practice
 \begin_layout Standard
 viii) 
 \emph on
-Finally one very important point:In order to observe oscillations in the
+Finally one very important point: In order to observe oscillations in the
  reactant and reaction product concentrations (as the authors do) for a
  large number supported particles, they need to be reasonably synchronized.
  The authors should discuss the origin of synchronization.
@@ -357,7 +501,7 @@ synchronizer
 
  because the changing gas-composition will collectively either oxidize or
  reduce the particles through the oscillation cycle.
- Also, it should be noticed that for a given sample the temperature windows
+ Also, it should be noticed that for a given sample the temperature window
  which shows oscillations is rather small indicating that the synchronization
  is not very robust but depends on rather careful parameter tuning.
 \end_layout
