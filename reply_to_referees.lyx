@@ -72,19 +72,19 @@ Reply to referees
 
 \begin_layout Standard
 We are sorry that referee 1 did not like the paper, however, it has never
- been our intention to do a thorough review of the field but mere to report
- our findings in a system of size-selected nanoparticles deposited in a
- clean environment.
+ been our intention to do a thorough review of the field but instead to
+ report our findings in a system of size-selected nanoparticles deposited
+ in a clean environment.
  We believe that the 
 \begin_inset Formula $\mu-$
 \end_inset
 
-reactor platform is a extremely useful tool for characterizing model catalysts
+reactor platform is an extremely useful tool for characterizing model catalysts
  with high sensitivity and fast temperature response.
  We do also, however, acknowledge that this type of platform have significant
  challenges ahead for characterization of the particles, as commented by
  referee 1, and are currently working to gain insight into the particle
- morphology both in-situ and post mortem of the catalyst.
+ morphology both by in-situ and post mortem analysis of the catalyst.
  We hope that the corrections we have done to the manuscript according to
  the points from referee 2 also meet some of referee 1's wishes for improvement
  of the manuscript.
@@ -105,7 +105,7 @@ The referee is requesting a broader literature list covering more of the
  We acknowledge this and have added more references to the introduction.
  Several of the mentioned references by the referee are now included in
  the paper.
- The list of added references is:
+ The list of added references is compiled below:
 \end_layout
 
 \begin_layout Itemize
@@ -211,22 +211,23 @@ Furthermore two extra paragraphs has been added to the introduction to give
 \end_layout
 
 \begin_layout Itemize
-Already the early theoretical descriptions of the possibility of oscillationary
- behavior even very simple catalytic systems noticed that even though oscillatio
-n can theoretically occur in many catalytic systems, the details are extremely
- specific to the given system, and it can thus be difficult to predict how
- and if a given system will oscillate.
+Already early theoretical descriptions of the oscillatory behavior, on even
+ very simple catalytic systems, noticed that oscillations can occur in many
+ catalytic systems.
+ The details of the oscillations are, however, extremely specific to the
+ given system and it can thus be difficult to predict how and if a given
+ system will oscillate.
  
 \begin_inset Newline newline
 \end_inset
 
 Oscillations in catalytic systems can be quite complex and the parameter
  space can be very large.
- In the system investigated in this paper, oscillations could be dependent
- on morphological parameters of the nanoparticels such as size, shape and
+ In the system investigated in this paper oscillations could be dependent
+ on morphological parameters of the nanoparticles such as size, shape and
  exposed facets.
- Also the oxidation state and possible carbon pollution on the surface could
- have impact on the system.
+ Also, the oxidation state and possible pollution on the surface could have
+ impact on the system.
  More macroscopic parameters such as the geometry of the reactor, the temperatur
 e distribution and the distribution of the particles throughout the reactor
  will also influence the systems ability to show kinetic oscillations.
@@ -240,7 +241,7 @@ Please find our comments to the specific questions below:
 i) 
 \emph on
 The word "ignition" is not used quite in the way it is usually used.
- Ignition ofthen implies a sudden rate change that changes the heat generation
+ Ignition often implies a sudden rate change that changes the heat generation
  in the system and an accompanying t increase.
  The authors should either give their definition of what they mean by ignition
  or use a different word (inspect e.g.
@@ -284,12 +285,12 @@ We are very much aware that the particles might show structural changes
 
 \begin_layout Itemize
 The manuscript has been revised according to the referee's point to make
- this more clear, by adding the following paragraph to the discussion:
+ this more clear by adding the following paragraph to the discussion:
 \begin_inset Newline newline
 \end_inset
 
-Another possible mechanism behind the increasing oscillation period, could
- be morphology changes of the nano particles.
+Another possible mechanism behind the increasing oscillation period could
+ be morphology changes of the nanoparticles.
  However, the fact that the oscillations show no clear size dependence in
  the range of 3 to 9
 \begin_inset space \thinspace{}
@@ -317,7 +318,7 @@ reactor platform is not well suited for TEM due to the SiO
 \begin_inset Formula $_{2}$
 \end_inset
 
-substrate thickness of several hundred 
+ substrate thickness of several hundred 
 \begin_inset Formula $\mu$
 \end_inset
 
@@ -378,7 +379,7 @@ In ref 12 of the paper the same mechanistic reason as he authors themselves
 \end_layout
 
 \begin_layout Itemize
-We agree that a comparison between the microkinetic modeling and experimental
+We agree that a comparison between microkinetic modeling and experimental
  study is interesting.
  The model mentioned in ref.
  12 (ref.
@@ -401,9 +402,9 @@ nm which are the size used for most of our results.
 \end_layout
 
 \begin_layout Itemize
-The ability to be able to do direct comparisons to theoretical studies is
- one of the great motivations to be able to apply in-sity methods in our
- system.
+The ability to be able to perform direct comparisons to theoretical studies
+ is one of the great motivations to be able to apply in-sity methods in
+ our system.
  However, currently we are not in a situation where we are able to conclude
  to what degree our system fits with the details of the Monte Carlo study.
 \end_layout
@@ -421,12 +422,15 @@ It is not quite clear from the presentation if the authors consider the
 \begin_layout Itemize
 A very valid point made by the referee.
  We are ourselves are very much in doubt whether the reaction is isothermal
- on a microscopic level.
+ or not on a microscopic level.
  On one hand the free energy pr.
  reaction is quite large and possibly distributed on a rather small amount
  of nanoparticles.
- On the other hand, heat transport in a small volume at 1bar should be very
- efficient.
+ On the other hand heat transport in a small volume at 1
+\begin_inset space \thinspace{}
+\end_inset
+
+bar should be very efficient.
  As mentioned in the paper, we have done several attempts at observing a
  possible sign for local temperature effects but so far without results.
  Thus one so far has to conclude that the experimental results points towards
@@ -436,14 +440,15 @@ A very valid point made by the referee.
 \end_layout
 
 \begin_layout Itemize
-The manuscript has been revised to make this point more clear, by adding
+The manuscript has been revised to make this point more clear by adding
  the following sentence to the discussion:
 \begin_inset Newline newline
 \end_inset
 
 which would point towards a constant temperature even on the microscopic
- scale, however the experimental data are so far not good enough to make
- final conclusions.
+ scale.
+ However, the experimental data are so far not good enough to make final
+ conclusions.
 \end_layout
 
 \begin_layout Standard
@@ -458,18 +463,19 @@ Knowing the flow rate through the reactor and the gas composition at the
 \end_layout
 
 \begin_layout Itemize
-In principle such a calculation could be carried out, however in practice
+In principle such a calculation could be carried out, however, in practice
  it is quite difficult.
- The diffusion length of the gas molecules are somewhat larger than the
- size of the reactor diameter and thus the detailes of the gradients becomes
- quite complex in the case of non full conversion.
- In the case of full conversion, the gradient might be more straight-forward,
- but in this case we lack detailed knowledge about the the actual conversion
- rate of the individual particles.
+ The diffusion length of the gas molecules are larger than the size of the
+ reactor diameter and thus the details of the gradients becomes quite complex
+ in the case of non-full conversion.
+ In the case of full conversion, the gradient might be more straight-forward
+ but here we lack detailed knowledge about the the actual conversion rate
+ of the individual particles.
  As mentioned in the paper, a very small fraction of the particles might
- be able to convert all reactans in which case the gradient will be very
- steep for the first few micrometers, in case the conversion pr.
- particle is lower, a more constant gradient along the reactor will be expected.
+ be able to convert all reactants in which case the gradient will be very
+ steep for the first few micrometers.
+ In the case of low conversion pr.
+ particle a more constant gradient along the reactor will be expected.
  
 \end_layout
 
