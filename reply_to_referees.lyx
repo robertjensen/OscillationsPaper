@@ -392,7 +392,7 @@ We agree that a comparison between microkinetic modeling and experimental
  study is interesting.
  The model mentioned in ref.
  12 (ref.
- 19 in the revised manuscript) is a Monte Carlo simulation on a system quite
+ 18 in the revised manuscript) is a Monte Carlo simulation on a system quite
  similar to the system we present here.
  However, one of the main results of the paper is a prediction of the smallest
  nanoparticle size that will be able to show stable oscillations.
@@ -450,12 +450,18 @@ bar should be very efficient.
 
 \begin_layout Itemize
 The manuscript has been revised to make this point more clear by adding
- the following sentence to the discussion:
+ the following to the discussion:
 \begin_inset Newline newline
 \end_inset
 
 which would point towards a constant temperature even on the microscopic
  scale.
+ Also a recent thereoretical study shows that heat transport is very efficient
+ in systems like the 
+\begin_inset Formula $\mu$
+\end_inset
+
+-reactors.
  However, the experimental data are so far not good enough to make final
  conclusions.
 \end_layout
