@@ -81,11 +81,20 @@ We are sorry that referee 1 did not like the paper, however, it has never
 
 reactor platform is an extremely useful tool for characterizing model catalysts
  with high sensitivity and fast temperature response.
- We do also, however, acknowledge that this type of platform have significant
+ We do also, however, acknowledge that this type of platform has significant
  challenges ahead for characterization of the particles, as commented by
  referee 1, and are currently working to gain insight into the particle
  morphology both by in-situ and post mortem analysis of the catalyst.
- We hope that the corrections we have done to the manuscript according to
+ On the other hand the referee must also appreciate the insight gained here
+ that well defined ocillations can occur on on very low coverages on a SiO
+\begin_inset Formula $_{2}$
+\end_inset
+
+ support being of inspiration for other in-situ experiments.
+\end_layout
+
+\begin_layout Standard
+We hope that the corrections we have done to the manuscript according to
  the points from referee 2 also meet some of referee 1's wishes for improvement
  of the manuscript.
 \end_layout
@@ -100,10 +109,10 @@ Reply to specific questions from referee 2:
 \end_layout
 
 \begin_layout Standard
-The referee is requesting a broader literature list covering more of the
- existing literature on the subject.
+The referee requests a broader literature list covering more of the existing
+ literature on the subject.
  We acknowledge this and have added more references to the introduction.
- Several of the mentioned references by the referee are now included in
+ Several of the references mentioned by the referee are now included in
  the paper.
  The list of added references is compiled below:
 \end_layout
@@ -211,9 +220,9 @@ Furthermore two extra paragraphs has been added to the introduction to give
 \end_layout
 
 \begin_layout Itemize
-Already early theoretical descriptions of the oscillatory behavior, on even
- very simple catalytic systems, noticed that oscillations can occur in many
- systems.
+Already early theoretical descriptions of the oscillatory behavior, even
+ on very simple catalytic systems, noticed that oscillations can occur in
+ many systems.
  The details of the oscillations are, however, extremely specific to the
  given system and it can thus be difficult to predict how and if a given
  system will oscillate.
@@ -230,7 +239,7 @@ Oscillations in catalytic systems can be quite complex and the parameter
  impact on the system.
  More macroscopic parameters such as the geometry of the reactor, the temperatur
 e distribution and the distribution of the particles throughout the reactor
- will also influence the systems ability to show kinetic oscillations.
+ may also influence the systems ability to show kinetic oscillations.
 \end_layout
 
 \begin_layout Subsection*
@@ -280,7 +289,10 @@ We are very much aware that the particles might show structural changes
  This does not mean that particles do not change shape during the cycle,
  more that we do not expect this to be the cause of the oscillations or
  the increasing oscillation period.
- 
+ However, to elucidate a facet or shape dependence further experiments are
+ definitely requiered.
+ At this point the possiblity of a facet and shape dependence is therefore
+ still open.
 \end_layout
 
 \begin_layout Itemize
@@ -296,8 +308,7 @@ Another possible mechanism behind the increasing oscillation period could
 \begin_inset space \thinspace{}
 \end_inset
 
-nm suggests that the oscillations are not very dependent on the exact particle
- morphology.
+nm suggests that the oscillations are not very dependent on the size.
 \end_layout
 
 \begin_layout Standard
@@ -360,10 +371,8 @@ A possibility is that the oscillations are coupled to reaction kinetics
 \end_layout
 
 \begin_layout Itemize
-We acknowledge the comment made by the referee but do not expect facets
- to be the driving mechanisms for the oscillations (see answer to question
- ii)) basically because we will then expect a much more pronounced size
- dependence of the oscillations.
+We acknowledge the comment made by the referee.
+ We belive that the answer to question ii) also applies here.
 \end_layout
 
 \begin_layout Standard
@@ -395,7 +404,7 @@ nm which is well above the 3
 \begin_inset space \thinspace{}
 \end_inset
 
-nm which are the size used for most of our results.
+nm which is the size used for most of our results.
  This points towards some sort of discrepancy in the underlying mechanisms
  in our system and the theoretically modeled system.
  
@@ -465,7 +474,7 @@ Knowing the flow rate through the reactor and the gas composition at the
 \begin_layout Itemize
 In principle such a calculation could be carried out, however, in practice
  it is quite difficult.
- The diffusion length of the gas molecules are larger than the size of the
+ The diffusion length of the gas molecules is larger than the size of the
  reactor diameter and thus the details of the gradients becomes quite complex
  in the case of non-full conversion.
  In the case of full conversion, the gradient might be more straight-forward
