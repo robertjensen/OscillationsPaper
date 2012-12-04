@@ -73,7 +73,7 @@ positions.append([.6, .25, .15, .15])
 positions.append([.69, .25, .15, .15])
 
 oxide = []
-oxide.append([0.001,3.14])
+oxide.append([0.002,3.14])
 oxide.append([1,0])
 oxide.append([0.7,0.5])
 oxide.append([0.5,1])
@@ -84,17 +84,19 @@ N = 500
 R = np.random.rand(N)
 Theta = np.random.rand(N)*2*np.pi
 area = 0.8
-colors = np.zeros((N,len(positions)))
 
 j = 0
 for pos in positions:
+    colors = []
     a = plt.axes(pos, axisbg='w',polar=True)
     print oxide[j][0]
     for i in range(0,N):
         if (R[i]>oxide[j][0]) and ((Theta[i] < oxide[j][1]) or (Theta[i] > 2*np.pi - oxide[j][1])):
-            colors[i][j] = 1
+            colors.append((1,0.2,0.2))
+        else:
+            colors.append((0,0,0.25))
             
-    c = plt.scatter(Theta, R, c=colors[:,j], s=area, linewidths=0)
+    c = plt.scatter(Theta, R, c=colors, s=area, linewidths=0)
     c.set_alpha(0.75)
     plt.setp(a, xticks=[], yticks=[])
     j = j + 1
